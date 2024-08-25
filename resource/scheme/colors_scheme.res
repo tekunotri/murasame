@@ -7,7 +7,7 @@
 		//=========================================================================================
 		"Main"												"207 255 127 255"
 		"LabelTransparent"									"0 0 0 130"
-		"Health Numbers"									"255 255 200 255"
+		"Health Numbers"									"255 255 200 255" // used for hp/ammo, still thinking wheter this color looks nice or not
 
 		"Health Buff"										"207 255 127 255" 
 		"Health Buff Target"								"207 255 127 255"
