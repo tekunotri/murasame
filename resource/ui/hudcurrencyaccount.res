@@ -4,51 +4,46 @@
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"Currency"
-		"xpos"										"0"
-		"ypos"										"0"
+		"font"										"m0refont16"
+		"fgcolor"									"100 255 0 255"
+		"xpos"										"11"
+		"ypos"										"57"
 		"zpos"										"3"
-		"wide"										"f0"
-		"tall"										"f0"
+		"wide"										"90"
+		"tall"										"45"
 		"visible"									"1"
 		"enabled"									"1"
-		"proportionaltoparent"						"1"
+		"textAlignment"								"center"	
 		"labelText"									"%currency%"
-		"textAlignment"								"center"
-		"font"										"m0refont16"
-		"fgcolor"									"White"
-	}
+	}	
+	
 	"CurrencyShadow"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"CurrencyShadow"
-		"xpos"										"-1"
-		"ypos"										"-1"
+		"font"										"m0refont16"
+		"fgcolor"									"0 0 0 255"
+		"xpos"										"12"
+		"ypos"										"58"
 		"zpos"										"3"
-		"wide"										"f0"
-		"tall"										"f0"
+		"wide"										"90"
+		"tall"										"45"
 		"visible"									"1"
 		"enabled"									"1"
-		"proportionaltoparent"						"1"
+		"textAlignment"								"center"	
 		"labelText"									"%currency%"
-		"textAlignment"								"center"
-		"font"										"m0refont16"
-		"fgcolor"									"Black"
-
-		"pin_to_sibling"							"Currency"
-	}
-
-
-
-	//==================================================================================================================================================
-	// REMOVED ELEMENTS
-	//==================================================================================================================================================
-
+	}	
+	
+	
+	
+	
+	
+	//////////////////////////////////REMOVED STUFF//////////////////////////////////
+	
 	"WhiteBG"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"WhiteBG"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
@@ -58,8 +53,6 @@
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"GreenBG"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"

@@ -12,7 +12,7 @@
 		"visible"									"1"
 		"enabled"									"1"
 		"settitlebarvisible"						"0"
-		"bgcolor_override"							"Black"
+		"bgcolor_override"							"FullBlack"
 
 		"item_ypos"									"90"
 		"item_ydelta"								"80"
@@ -37,6 +37,7 @@
 			"deferred_description"					"1"
 			"deferred_icon"							"1"
 		}
+
 		"modelpanels_kv"
 		{
 			"ControlName"							"CItemModelPanel"
@@ -65,26 +66,28 @@
 
 			"itemmodelpanel"
 			{
-				"use_item_rendertarget"				"0"
+				"use_item_rendertarget" 			"0"
 				"allow_rot"							"0"
 			}
 
 			"use_item_sounds"						"1"
 		}
+
 		"duplicatelabels_kv"
 		{
+			"font"									"ItemFontNameSmallest"
+			"textAlignment"							"center"
 			"wide"									"20"
 			"tall"									"15"
 			"zpos"									"1"
 			"enabled"								"1"
-			"font"									"ItemFontNameSmallest"
-			"textAlignment"							"center"
-			"fgcolor"								"Main"
+			"fgcolor"								"153 204 255 255"
 		}
 	}
+
 	"BackpackBG"
 	{
-		"ControlName"								"Panel"
+		"ControlName"								"EditablePanel"
 		"fieldName"									"BackpackBG"
 		"xpos"										"cs-0.5"
 		"ypos"										"cs-0.5-40"
@@ -100,7 +103,7 @@
 	}
 	"FiltersBG"
 	{
-		"ControlName"								"Panel"
+		"ControlName"								"EditablePanel"
 		"fieldName"									"FiltersBG"
 		"xpos"										"0"
 		"ypos"										"2"
@@ -118,6 +121,7 @@
 		"pin_corner_to_sibling"						"PIN_CENTER_BOTTOM"
 		"pin_to_sibling_corner"						"PIN_CENTER_TOP"
 	}
+
 	"NameFilterIcon"
 	{
 		"ControlName"								"EditablePanel"
@@ -131,7 +135,7 @@
 		"enabled"									"1"
 		"paintbackground"							"1"
 		"paintbackgroundtype"						"0"
-		"bgcolor_override"							"Black"
+		"bgcolor_override"							"LighterFullBlack"
 
 		"Icon"
 		{
@@ -154,6 +158,7 @@
 		"pin_corner_to_sibling"						"PIN_CENTER_LEFT"
 		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
 	}
+
 	"NameFilterTextEntry"
 	{
 		"ControlName"								"TextEntry"
@@ -169,14 +174,15 @@
 		"editable"									"1"
 		"unicode"									"1"
 		"fgcolor_override"							"White"
-		"bgcolor_override"							"LabelTransparent"
-		"paintbackgroundtype"						"0"
+		"bgcolor_override"							"0 0 0 150"
+		"paintbackgroundtype" 						"0"
 		"font"										"HudFontSmallest"
 
 		"pin_to_sibling"							"NameFilterIcon"
 		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
 		"pin_to_sibling_corner"						"PIN_CENTER_RIGHT"
 	}
+
 	"OnlyAllowUniqueQuality"
 	{
 		"ControlName"								"CheckButton"
@@ -192,6 +198,7 @@
 		"Font"										"HudFontSmallestBold"
 		"textAlignment"								"east"
 	}
+
 	"PrevPageButton"
 	{
 		"ControlName"								"CExButton"
@@ -222,10 +229,14 @@
 		"Command"									"prevpage"
 		"visible"									"1"
 	}
+
 	"CurPageLabel"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"CurPageLabel"
+		"font"										"HudFontSmallishBold"
+		"labelText"									"%backpackpage%"
+		"textAlignment"								"center"
 		"xpos"										"0"
 		"ypos"										"-2"
 		"zpos"										"1"
@@ -233,15 +244,13 @@
 		"tall"										"16"
 		"visible"									"1"
 		"enabled"									"1"
-		"font"										"HudFontSmallishBold"
-		"labelText"									"%backpackpage%"
-		"textAlignment"								"center"
-		"fgcolor"									"White"
+		"fgcolor" 									"White"
 
 		"pin_to_sibling"							"FiltersBG"
 		"pin_corner_to_sibling"						"PIN_CENTER_TOP"
 		"pin_to_sibling_corner"						"PIN_CENTER_TOP"
 	}
+
 	"NextPageButton"
 	{
 		"ControlName"								"CExButton"
@@ -272,6 +281,7 @@
 		"Command"									"nextpage"
 		"visible"									"1"
 	}
+
 	"ShowBackpack"
 	{
 		"ControlName"								"CExButton"
@@ -289,11 +299,13 @@
 		"AllCaps"									"1"
 		"Command"									"show_backpack"
 		"sound_depressed"							"UI/buttonclick.wav"
+		"sound_released"							"UI/buttonclickrelease.wav"
 
-		"pin_to_sibling"							"FiltersBG"
-		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
-		"pin_to_sibling_corner"						"PIN_CENTER_RIGHT"
+		"pin_to_sibling" 							"FiltersBG"
+		"pin_corner_to_sibling" 					"PIN_CENTER_RIGHT"
+		"pin_to_sibling_corner" 					"PIN_CENTER_RIGHT"
 	}
+
 	"ShowSelection"
 	{
 		"ControlName"								"CExButton"
@@ -311,15 +323,17 @@
 		"AllCaps"									"1"
 		"Command"									"show_selection"
 		"sound_depressed"							"UI/buttonclick.wav"
+		"sound_released"							"UI/buttonclickrelease.wav"
 
-		"pin_to_sibling"							"FiltersBG"
-		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
-		"pin_to_sibling_corner"						"PIN_CENTER_RIGHT"
+		"pin_to_sibling" 							"FiltersBG"
+		"pin_corner_to_sibling" 					"PIN_CENTER_RIGHT"
+		"pin_to_sibling_corner" 					"PIN_CENTER_RIGHT"
 	}
-	"MouseOverItemPanel"
+
+	"mouseoveritempanel"
 	{
 		"ControlName"								"CItemModelPanel"
-		"fieldName"									"MouseOverItemPanel"
+		"fieldName"									"mouseoveritempanel"
 		"xpos"										"c-70"
 		"ypos"										"270"
 		"zpos"										"100"
@@ -352,5 +366,12 @@
 			"fgcolor"								"White"
 			"centerwrap"							"1"
 		}
+	}
+
+	"CancelButton"
+	{
+		"ControlName"								"CExButton"
+		"fieldName"									"CancelButton"
+		"xpos"										"9999"
 	}
 }

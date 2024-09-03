@@ -36,10 +36,10 @@
 			"ypos"									"-1"
 			"zpos"									"-1"
 			"wide"									"p1.1"
-			"tall"									"f8"
+			"tall"									"0"
 			"visible"								"0"
 			"PaintBackground"						"0"
-			"border"								"ReplayDefaultBorder"
+			"border"								"LoadoutItemPopupBorder"
 			"proportionaltoparent"					"1"
 		}
 		"ToggleChatButton"
@@ -53,11 +53,11 @@
 			"tall"									"19"
 			"visible"								"1"
 			"enabled"								"1"
-			"font"									"Symbols18"
+			"font"									"Icons18"
 			"textAlignment"							"center"
 			"Command"								"toggle_chat"
 			"proportionaltoparent"					"1"
-			"labeltext"								"H"
+			"labeltext"								"R"
 			"mouseinputenabled"						"1"
 			"keyboardinputenabled"					"0"
 			"actionsignallevel"						"2"
@@ -72,8 +72,8 @@
 			"depressedFgColor_override"				"White"
 
 			"defaultBgColor_override"				"TransparentBlack"
-			"armedBgColor_override"					"Menu Labels"
-			"depressedBgColor_override"				"Menu Labels"
+			"armedBgColor_override"					"207 255 127 255"
+			"depressedBgColor_override"				"207 255 127 255"
 		}
 		"PartySlot0"
 		{
@@ -224,7 +224,7 @@
 				"tall"								"f-1"
 				"visible"							"1"
 				"proportionaltoparent"				"1"
-				"border"							"ReplayDefaultBorder"
+				"border"							"LoadoutItemPopupBorder"
 			}
 			"QueueLogoButton"
 			{
@@ -238,7 +238,7 @@
 				"visible"							"1"
 				"enabled"							"1"
 				"labeltext"							""
-				"font"								"HudFontSmallBold"
+				"font"								"HudFont14Bold"
 				"textAlignment"						"center"
 				"Command"							"queue_logo_clicked"
 				"proportionaltoparent"				"1"
@@ -276,7 +276,7 @@
 				"tall"								"f0"
 				"visible"							"1"
 				"enabled"							"1"
-				"font"								"HudFontSmallestBold"
+				"font"								"HudFont11Bold"
 				"fgcolor_override"					"White"
 				"textAlignment"						"west"
 				"labelText"							"%queue_state%"
@@ -287,15 +287,15 @@
 				{
 					"0"
 					{
-						"font"						"HudFontSmallestBold"
+						"font"						"HudFont11Bold"
 					}
 					"1"
 					{
-						"font"						"StorePromotionsTitle"
+						"font"						"HudFont10Bold"
 					}
 					"2"
 					{
-						"font"						"FontStorePrice"
+						"font"						"HudFont9"
 					}
 				}
 			}
@@ -311,7 +311,7 @@
 				"visible"							"1"
 				"enabled"							"1"
 				"labeltext"							"+"
-				"font"								"Symbols16"
+				"font"								"Icons16"
 				"textAlignment"						"center"
 				"sound_depressed"					"UI/buttonclick.wav"
 				"sound_released"					"UI/buttonclickrelease.wav"
@@ -331,8 +331,8 @@
 				"tall"								"16"
 				"visible"							"1"
 				"enabled"							"1"
-				"labeltext"							"X"
-				"font"								"Symbols16"
+				"labeltext"							"b"
+				"font"								"Icons16"
 				"textAlignment"						"center"
 				"sound_depressed"					"UI/buttonclick.wav"
 				"sound_released"					"UI/buttonclickrelease.wav"
@@ -365,7 +365,7 @@
 				"tall"								"f-1"
 				"visible"							"1"
 				"proportionaltoparent"				"1"
-				"border"							"ReplayDefaultBorder"
+				"border"							"LoadoutItemPopupBorder"
 			}
 			"PromptText"
 			{
@@ -378,7 +378,7 @@
 				"tall"								"f0"
 				"visible"							"1"
 				"enabled"							"1"
-				"font"								"HudFontSmallestBold"
+				"font"								"HudFont11Bold"
 				"fgcolor_override"					"White"
 				"textAlignment"						"west"
 				"labelText"							"#TF_MM_JoinPartyLobby_Prompt"
@@ -403,7 +403,7 @@
 
 				"visible"							"1"
 				"enabled"							"1"
-				"font"								"HudFontSmallestBold"
+				"font"								"HudFont11Bold"
 				"textAlignment"						"center"
 				"Command"							"join_party_match"
 				"proportionaltoparent"				"1"
@@ -430,11 +430,11 @@
 			"tall"									"f9"
 			"visible"								"1"
 			"enabled"								"1"
-			"font"									"Symbols20"
+			"font"									"Icons20"
 			"textAlignment"							"center"
 			"Command"								"quit"
 			"proportionaltoparent"					"1"
-			"labeltext"								"O"
+			"labeltext"								"b"
 			"mouseinputenabled"						"1"
 			"keyboardinputenabled"					"0"
 			"actionsignallevel"						"2"
@@ -458,11 +458,11 @@
 			"tall"									"f9"
 			"visible"								"1"
 			"enabled"								"1"
-			"font"									"Symbols20"
+			"font"									"Icons20"
 			"textAlignment"							"center"
 			"Command"								"quit"
 			"proportionaltoparent"					"1"
-			"labeltext"								"X"
+			"labeltext"								"b"
 			"mouseinputenabled"						"1"
 			"keyboardinputenabled"					"0"
 			"actionsignallevel"						"2"
@@ -479,18 +479,18 @@
 		{
 			"ControlName"							"CExImageButton"
 			"fieldName"								"ResumeButton"
-			"xpos"									"0"
+			"xpos"									"rs1-48"
 			"ypos"									"0"
 			"zpos"									"100"
 			"wide"									"24"
 			"tall"									"f9"
 			"visible"								"0"
 			"enabled"								"1"
-			"font"									"Symbols20"
+			"font"									"Icons20"
 			"textAlignment"							"center"
 			"Command"								"resume_game"
 			"proportionaltoparent"					"1"
-			"labeltext"								"="
+			"labeltext"								"<"
 			"mouseinputenabled"						"1"
 			"keyboardinputenabled"					"0"
 			"actionsignallevel"						"2"
@@ -500,8 +500,6 @@
 
 			"defaultFgColor_override"				"White"
 			"armedFgColor_override"					"White"
-			
-			"alpha"									"0"
 		}
 		"FindAGameButton"
 		{
@@ -514,11 +512,11 @@
 			"tall"									"f9"
 			"visible"								"1"
 			"enabled"								"1"
-			"font"									"Symbols20"
+			"font"									"Icons20"
 			"textAlignment"							"center"
 			"Command"								"find_game"
 			"proportionaltoparent"					"1"
-			"labeltext"								"0"
+			"labeltext"								"!"
 			"mouseinputenabled"						"1"
 			"keyboardinputenabled"					"0"
 			"actionsignallevel"						"2"

@@ -1,114 +1,85 @@
 "Resource/UI/FreezePanelKillerHealth.res"
 {
+	"PlayerStatusHealthValue"
+	{
+		"ControlName"								"Label"
+		"fieldName"									"PlayerStatusHealthValue"
+		"xpos"										"0"
+		"ypos"										"5"
+		"zpos"										"20"
+		"wide"										"40"
+		"tall"										"20"
+		"visible"									"1"
+		"enabled"									"1"
+		"textAlignment"								"center"	
+		"labeltext"									"%Health%"
+		"font"										"M0refont24"
+		"fgcolor_override"  						"Health Numbers"	
+	}
+	
+	"PlayerStatusHealthValueShadowKiller"
+	{
+		"ControlName"								"Label"
+		"fieldName"									"PlayerStatusHealthValueShadowKiller"
+		"xpos"										"1"
+		"ypos"										"6"
+		"zpos"										"20"
+		"wide"										"40"
+		"tall"										"20"
+		"visible"									"1"
+		"enabled"									"1"
+		"textAlignment"								"center"	
+		"labeltext"									"%Health%"
+		"font"										"M0refont24"
+		"fgcolor_override"  						"0 0 0 255"	
+	}
+	
 	"PlayerStatusHealthBonusImage"
 	{
 		"ControlName"								"ImagePanel"
 		"fieldName"									"PlayerStatusHealthBonusImage"
-		"xpos"										"cs-0.5"
-		"ypos"										"cs-0.5"
+		"xpos"										"10"
+		"ypos"										"6"
 		"zpos"										"19"
-		"wide"										"20"
-		"tall"										"20"
+		"wide"										"21"
+		"tall"										"21"
 		"visible"									"0"
 		"enabled"									"1"
-		"proportionaltoparent"						"1"
 		"image"										"../hud/health_over_bg"
-		"scaleImage"								"1"
+		"scaleImage"								"1"	
 	}
-	"HealthValue_Killer"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"HealthValue_Killer"
-		"xpos"										"cs-0.5"
-		"ypos"										"cs-0.5-1"
-		"zpos"										"20"
-		"wide"										"f0"
-		"tall"										"f0"
-		"visible"									"1"
-		"enabled"									"1"
-		"proportionaltoparent"						"1"
-		"textAlignment"								"center"
-		"labeltext"									"%Health%"
-		"font"										"m0refont24"
-		"fgcolor"									"Health Numbers"
-	}
-	"HealthValue_Killer_Shadow"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"HealthValue_Killer_Shadow"
-		"xpos"										"-1"
-		"ypos"										"-1"
-		"zpos"										"20"
-		"wide"										"f0"
-		"tall"										"f0"
-		"visible"									"1"
-		"enabled"									"1"
-		"proportionaltoparent"						"1"
-		"textAlignment"								"center"
-		"labeltext"									"%Health%"
-		"font"										"m0refont24"
-		"fgcolor"									"Black"
-
-		"pin_to_sibling"							"HealthValue_Killer"
-	}
-	"HealthValue_Killer_Shadow_Extra"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"HealthValue_Killer_Shadow_Extra"
-		"xpos"										"0"
-		"ypos"										"0"
-		"zpos"										"20"
-		"wide"										"f-1"
-		"tall"										"f-1"
-		"visible"									"1"
-		"enabled"									"1"
-		"proportionaltoparent"						"1"
-		"textAlignment"								"center"
-		"labeltext"									"%Health%"
-		"font"										"m0refont24"
-		"fgcolor"									"Extra Shadow"
-		"alpha"										"0"
-
-		"pin_to_sibling"							"HealthValue_Killer_Shadow"
-	}
-
-
-
-	//==================================================================================================================================================
-	// REMOVED ELEMENTS
-	//==================================================================================================================================================
-
+	
+	
+	
+	
+	
+	//////////////////////////////////REMOVED STUFF//////////////////////////////////
+	
 	"PlayerStatusHealthImage"
 	{
 		"ControlName"								"ImagePanel"
 		"fieldName"									"PlayerStatusHealthImage"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
-		"enabled"									"0"
+		"enabled"									"0"	
 	}
 	"PlayerStatusHealthImageBG"
 	{
 		"ControlName"								"ImagePanel"
 		"fieldName"									"PlayerStatusHealthImageBG"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
-		"enabled"									"0"
+		"enabled"									"0"	
 	}
 	"BuildingStatusHealthImageBG"
 	{
 		"ControlName"								"ImagePanel"
-		"fieldName"									"BuildingStatusHealthImageBG"
-		"xpos"										"9999"
-		"ypos"										"9999"
+		"fieldName"									"PlayerStatusHealthImageBG"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
-		"enabled"									"0"
+		"enabled"									"0"	
 	}
 }

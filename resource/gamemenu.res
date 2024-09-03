@@ -1,18 +1,16 @@
-"Resource/GameMenu.res"
+"GameMenu"
 {
-	//====================================================================================================================================================
-	// MAIN MENU BUTTONS
-	//====================================================================================================================================================
-	"Version" 
+	/////////////////////////MAIN MENU/////////////////////////
+	"Version"
 	{
-		"label"										"murasamelove"
-		"command"									"engine con_enable 1; play ui/mura.mp3; toggleconsole; clear; echo (another) simple edit by techno; echo murasame-chan, daisuki!!!"
+		"label" 									"cvc-edit" 
+		"command" 									"engine showconsole; echo lol (updated by techno)"
 		"OnlyAtMenu"								"1"
 	}
 	"Servers"
 	{
-		"label"										"Servers"
-		"command"									"OpenServerBrowser"
+		"label" 									"Servers"
+		"command" 									"OpenServerBrowser"
 	}
 	"Create"
 	{
@@ -39,41 +37,24 @@
 		"label"										"Advanced"
 		"command"									"opentf2options"
 	}
-	"DemoUI"
-	{
-		"label"										"DemoUI"
-		"command"									"engine demoui"
-	}
-	"Friends"
-	{
-		"label"										"Friends"
-		"command"									"engine cl_mainmenu_safemode 1"
-	}
-	"Quickplay"
-	{
-		"label"										"n"
-		"command"									"engine replay_reloadbrowser"
-	}
 	"Contracker"
 	{
 		"label"										"Contracker"
 		"command"									"questlog"
 	}
-	"Workshop"
+	"Streams"
 	{
-		"label"										"Workshop"
-		"command"									"engine OpenSteamWorkshopDialog"
+		"label"										"Streams"
+		"command"									"watch_stream"
 	}
 	"Quit"
 	{
-		"label"										"Quit"
-		"command"									"engine replay_confirmquit"
+		"label" 									"Quit"
+		"command" 									"engine replay_confirmquit"
 		"OnlyAtMenu"								"1"
 	}
-
-	//====================================================================================================================================================
-	// IN GAME BUTTONS
-	//====================================================================================================================================================
+	
+	/////////////////////////INGAME ONLY/////////////////////////
 	"Scoreboard"
 	{
 		"label"										"Scoreboard"
@@ -82,102 +63,42 @@
 	}
 	"Disconnect"
 	{
-		"label"										"Disconnect"
-		"command"									"engine disconnect"
-		"OnlyInGame"								"1"
+		"label" 									"Disconnect"
+		"command" 									"engine disconnect"
+		"OnlyInGame" 								"1"
 	}
 	"QuitGame"
 	{
-		"label"										"Quit"
-		"command"									"engine replay_confirmquit"
-		"OnlyInGame"								"1"
+		"label" 									"Quit"
+		"command" 									"engine replay_confirmquit"
+		"OnlyInGame" 								"1"
 	}
 	"Vote"
 	{
-		"label"										"M"
+		"label"										""
 		"command"									"callvote"
-		"tooltip"									"Call a Vote"
-		"OnlyInGame"								"1"
+		"subimage" 									"icon_checkbox"
+		"OnlyInGame" 								"1"
 	}
 	"Mute"
 	{
-		"label"										"L"
-		"command"									"OpenMutePlayerDialog"
-		"tooltip"									"Mute a Player"
-		"OnlyInGame"								"1"
+		"label"										""
+		"command"									"OpenPlayerListDialog"
+		"subimage" 									"glyph_muted"
+		"OnlyInGame" 								"1"
 	}
 	"Report"
 	{
-		"label"										"K"
+		"label"										""
 		"command"									"OpenReportPlayerDialog"
-		"tooltip"									"Report a Player"
 		"OnlyInGame"								"1"
+		"subimage"									"glyph_alert"
 	}
 	"Achievements"
 	{
-		"label"										"J"
+		"label"										""
 		"command"									"OpenAchievementsDialog"
-		"tooltip"									"Achievements"
-		"OnlyInGame"								"1"
-	}
-
-	//====================================================================================================================================================
-	// TOOLS BAR
-	//====================================================================================================================================================
-	"Fix Invisible Players"
-	{
-		"label"										"D"
-		"command"									"engine stop; record fix"
-		"tooltip"									"Fix Invisible Players"
-		"OnlyInGame"								"1"
-	}
-	"Reload Sound"
-	{
-		"label"										"B"
-		"command"									"engine snd_restart"
-		"tooltip"									"Reload Sound"
-		"OnlyInGame"								"1"
-	}
-	"Reload Hud"
-	{
-		"label"										"C"
-		"command"									"engine hud_reloadscheme"
-		"tooltip"									"Reload Hud"
-		"OnlyInGame"								"1"
-	}
-	"Toggle Netgraph"
-	{
-		"label"										"F"
-		"command"									"engine toggle net_graph 0 1"
-		"tooltip"									"Enable/Disable NetGraph"
-		"OnlyInGame"								"1"
-	}
-	"Toggle Contracts"
-	{
-		"label"										"G"
-		"command"									"engine toggle tf_contract_progress_show 0 1"
-		"tooltip"									"Enable/Disable Contracts"
-		"OnlyInGame"								"1"
-	}
-	"Enable Captions"
-	{
-		"label"										"E"
-		"command"									"engine closecaption 1;cc_subtitles 0;cc_lang english;cc_predisplay_time 0;cc_emit #subtitles0"
-		"tooltip"									"Enable CloseCaptions"
-		"OnlyInGame"								"1"
-	}
-	"Disable Captions"
-	{
-		"label"										"E"
-		"command"									"engine closecaption 0; cc_predisplay_time 0"
-		"tooltip"									"Disable CloseCaptions"
-		"OnlyInGame"								"1"
-	}
-	"Toggle Chat"
-	{
-		"label"										"A"
-		"command"									"engine toggle hud_saytext_time 0 12"
-		"tooltip"									"Enable/Disable Chat"
+		"subimage"									"glyph_achievements"
 		"OnlyInGame"								"1"
 	}
 }

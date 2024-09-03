@@ -1,111 +1,135 @@
 "Resource/UI/HudObjectiveKothTimePanel.res"
 {
-	"HudKothTimeStatus"
-	{
-		"if_match"
-		{
-			"zpos"									"5"
-		}
-	}
-
 	"BlueTimer"
 	{
 		"ControlName"								"CTFHudTimeStatus"
 		"fieldName"									"BlueTimer"
-		"xpos"										"2"
+		"xpos"										"28"
 		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"40"
-		"tall"										"40"
+		"wide"										"100"
+		"tall"										"50"
 		"visible"									"1"
 		"enabled"									"1"
-		"proportionaltoparent"						"1"
-
-		"if_match"
-		{
-			"xpos"									"6"
-		}
-
+		
 		"TimePanelValue"
 		{
 			"ControlName"							"CExLabel"
 			"fieldName"								"TimePanelValue"
-			"font"									"m0refont16"
-			"fgcolor"								"White"
-			"xpos"									"cs-0.5"
-			"ypos"									"-2"
+			"font"									"Medium18"
+			"fgcolor"								"255 255 255 255"
+			"xpos"									"30"
+			"ypos"									"-7"
 			"zpos"									"3"
-			"wide"									"f0"
-			"tall"									"15"
+			"wide"									"41"
+			"tall"									"25"
 			"visible"								"1"
 			"enabled"								"1"
-			"proportionaltoparent"					"1"
 			"textAlignment"							"center"
 			"labelText"								"0:00"
-
-			"if_match"
-			{
-				"ypos"								"5"
-				"tall"								"16"
-				"font"								"m0refont14"
-			}
+		}	
+		"TimePanelbg"
+		{
+			"ControlName"								"imagepanel"
+			"fieldName"								"TimePanelbg"
+			"xpos"									"999999"
+			"ypos"									"999999"
+			"zpos"									"3"
+			"wide"									"0"
+			"tall"									"0"
+			"visible"								"0"
+			"enabled"								"0"
+			"textAlignment"							"center"
 		}
 	}
+
+	"BlueBar"
+	{
+		"ControlName"				"EditablePanel"
+		"fieldName"					"BlueBar"
+		"xpos"						"-28"
+		"ypos"						"5"
+		"zpos"						"-1"
+		"wide"						"44"
+		"tall"						"20"
+		"visible"					"1"
+		"enabled"					"1"
+		"border"					"TFFatLineBorderBlueBG"
+		
+		"pin_to_sibling"			"BlueTimer"
+	}
+
 	"RedTimer"
 	{
 		"ControlName"								"CTFHudTimeStatus"
 		"fieldName"									"RedTimer"
-		"xpos"										"rs1-2"
+		"xpos"										"73"
 		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"40"
-		"tall"										"40"
+		"wide"										"100"
+		"tall"										"50"
 		"visible"									"1"
 		"enabled"									"1"
-		"proportionaltoparent"						"1"
-
-		"if_match"
-		{
-			"xpos"									"rs1-6"
-		}
-
+		
 		"TimePanelValue"
 		{
 			"ControlName"							"CExLabel"
 			"fieldName"								"TimePanelValue"
-			"font"									"m0refont16"
-			"fgcolor"								"White"
-			"xpos"									"cs-0.5"
-			"ypos"									"-2"
+			"font"									"Medium18"
+			"fgcolor"								"255 255 255 255"
+			"xpos"									"30"
+			"ypos"									"-7"
 			"zpos"									"3"
-			"wide"									"f0"
-			"tall"									"15"
+			"wide"									"40"
+			"tall"									"25"
 			"visible"								"1"
 			"enabled"								"1"
-			"proportionaltoparent"					"1"
 			"textAlignment"							"center"
 			"labelText"								"0:00"
-
-			"if_match"
-			{
-				"ypos"								"5"
-				"tall"								"16"
-				"font"								"m0refont14"
-			}
+		}	
+		"TimePanelbg"
+		{
+			"ControlName"								"imagepanel"
+			"fieldName"								"TimePanelbg"
+			"xpos"									"999999"
+			"ypos"									"999999"
+			"zpos"									"3"
+			"wide"									"0"
+			"tall"									"0"
+			"visible"								"0"
+			"enabled"								"0"
+			"textAlignment"							"center"
 		}
 	}
+
+	"RedBar"
+	{
+		"ControlName"				"EditablePanel"
+		"fieldName"					"RedBar"
+		"xpos"						"-28"
+		"ypos"						"5"
+		"zpos"						"-1"
+		"wide"						"44"
+		"tall"						"20"
+		"visible"					"1"
+		"enabled"					"1"
+		"border"					"TFFatLineBorderRedBG"
+		
+		"pin_to_sibling"			"RedTimer"
+	}
+
 	"ActiveTimerBG"
 	{
 		"ControlName"								"ImagePanel"
 		"fieldName"									"ActiveTimerBG"
 		"xpos"										"0"
-		"ypos"										"0"
+		"ypos"										"15"
 		"zpos"										"1"
 		"wide"										"44"
-		"tall"										"16"
+		"tall"										"5"
 		"visible"									"0"
 		"enabled"									"1"
-		"fillcolor"									"TransparentLightBlack"
-		"scaleImage"								"1"
+		"fillcolor"  								"255 255 200 200"	
+		"scaleImage"								"1"	
 	}
 }

@@ -1,65 +1,65 @@
 "Resource/UI/HudTeamSwitch.res"
-{
+{	
 	"SwitchLabel"
-	{
+	{	
 		"ControlName"								"CExLabel"
 		"fieldName"									"SwitchLabel"
-		"font"										"m0refont12Shadow"
-		"xpos"										"cs-0.5"
-		"ypos"										"80"
+		"font"										"m0refont12"
+		"xpos"										"80"
+		"ypos"										"58"
 		"zpos"										"1"
-		"wide"										"f0"
-		"tall"										"15"
+		"wide"										"240"
+		"tall"										"55"
+		"autoResize"								"0"
+		"pinCorner"									"0"
 		"visible"									"1"
 		"enabled"									"1"
 		"wrap"										"1"
-		"centerwrap"								"1"
 		"labelText"									"#TF_teambalanced"
-		"fgcolor"									"White"
-		"textAlignment"								"center"
+		"fgcolor"									"255 255 255 255"
+		"textAlignment"								"North"
 	}
+	
 	"BalanceLabel"
-	{
+	{	
 		"ControlName"								"CExLabel"
 		"fieldName"									"BalanceLabel"
-		"font"										"m0refont12Shadow"
-		"xpos"										"cs-0.5"
-		"ypos"										"60"
+		"font"										"m0refont12"
+		"xpos"										"80"
+		"ypos"										"28"
 		"zpos"										"1"
-		"wide"										"f0"
-		"tall"										"15"
+		"wide"										"230"	
+		"tall"										"55"
+		"autoResize"								"0"
+		"pinCorner"									"0"
 		"visible"									"1"
 		"enabled"									"1"
 		"wrap"										"1"
-		"centerwrap"								"1"
 		"labelText"									""
-		"fgcolor"									"White"
-		"textAlignment"								"center"
+		"fgcolor"									"255 255 255 255"
+		"textAlignment"								"North"
 	}
-
-
-
-	//==================================================================================================================================================
-	// REMOVED ELEMENTS
-	//==================================================================================================================================================
-
+	
+	
+	
+	
+	
+	//////////////////////////////////REMOVED STUFF//////////////////////////////////
+	
 	"HudTeamSwitchBG"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"HudTeamSwitchBG"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"SwitchImage"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"SwitchImage"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"

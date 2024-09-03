@@ -1,18 +1,18 @@
 "Resource/UI/HudMannVsMachineStatus.res"
-{
+{	
 	"WaveStatusPanel"
 	{
 		"ControlName"								"CWaveStatusPanel"
 		"fieldName"									"WaveStatusPanel"
-		"xpos"										"cs-0.5"
+		"xpos"										"c-300"
 		"ypos"										"0"
 		"zpos"										"0"
 		"wide"										"600"
 		"tall"										"67"
 		"visible"									"1"
 		"enabled"									"1"
-		"proportionaltoparent"						"1"
 	}
+	
 	"WaveCompleteSummaryPanel"
 	{
 		"ControlName"								"CWaveCompleteSummaryPanel"
@@ -25,6 +25,7 @@
 		"visible"									"1"
 		"enabled"									"1"
 	}
+	
 	"BossStatusPanel"
 	{
 		"ControlName"								"CMvMBossStatusPanel"
@@ -36,22 +37,36 @@
 		"tall"										"100"
 		"visible"									"1"
 		"enabled"									"1"
-
-		"pin_to_sibling"							"WaveStatusPanel"
-		"pin_corner_to_sibling"						"PIN_CENTER_TOP"
-		"pin_to_sibling_corner"						"PIN_CENTER_BOTTOM"
+		
+		"pin_to_sibling"             				"WaveStatusPanel"
+		"pin_corner_to_sibling"       				"4"          
+		"pin_to_sibling_corner"       				"6"  
 	}
+
+	"CurrencyStatusPanel"
+	{
+		"ControlName"								"CCurrencyStatusPanel"
+		"fieldName"									"CurrencyStatusPanel"
+		"xpos"										"c127"
+		"ypos"										"r130"
+		"wide"										"100"
+		"tall"										"100"
+		"visible" 									"1"
+		"enabled" 									"1"
+	}
+	
 	"InWorldCurrencyPanel"
 	{
 		"ControlName"								"CInWorldCurrencyStatus"
 		"fieldName"									"InWorldCurrencyPanel"
-		"xpos"										"c-204"
-		"ypos"										"rs1-18"
-		"wide"										"60"
-		"tall"										"18"
-		"visible"									"1"
-		"enabled"									"1"
+		"xpos"										"c131"
+		"ypos"										"r40"
+		"wide"										"100"
+		"tall"										"100"
+		"visible" 									"1"
+		"enabled" 									"1"
 	}
+
 	"WarningSwoop"
 	{
 		"ControlName"								"CWarningSwoop"
@@ -65,8 +80,9 @@
 		"enabled"									"1"
 		"image"										"../sprites/obj_icons/warning_highlight"
 		"scaleImage"								"1"
-		"time"										"0.3"
+		"time"										"0.3"		
 	}
+	
 	"UpgradeLevelContainer"
 	{
 		"ControlName"								"EditablePanel"
@@ -76,7 +92,7 @@
 		"wide"										"640"
 		"tall"										"480"
 		"visible"									"0"
-
+		
 		"UpgradeProgressTrack"
 		{
 			"ControlName"							"CMvMBombCarrierProgress"
@@ -85,9 +101,10 @@
 			"ypos"									"r35"
 			"wide"									"640"
 			"tall"									"480"
-			"visible"								"1"
+			"visible"								"1"	
 		}
-		"UpgradeLevel1"
+		
+		"UpgradeLevel1" 
 		{
 			"ControlName"							"ImagePanel"
 			"fieldName"								"UpgradeLevel1"
@@ -95,12 +112,16 @@
 			"ypos"									"r24"
 			"wide"									"20"
 			"tall"									"20"
+			"autoResize"							"0"
+			"pinCorner"								"0"
 			"visible"								"1"
 			"enabled"								"1"
+			"tabPosition"							"0"
 			"image"									"../hud/hud_mvm_bomb_upgrade_1_disabled"
 			"scaleImage"							"1"
 		}
-		"UpgradeLevel2"
+		
+		"UpgradeLevel2" 
 		{
 			"ControlName"							"ImagePanel"
 			"fieldName"								"UpgradeLevel2"
@@ -108,12 +129,16 @@
 			"ypos"									"r42"
 			"wide"									"20"
 			"tall"									"20"
+			"autoResize"							"0"
+			"pinCorner"								"0"
 			"visible"								"1"
 			"enabled"								"1"
+			"tabPosition"							"0"
 			"image"									"../hud/hud_mvm_bomb_upgrade_2_disabled"
 			"scaleImage"							"1"
 		}
-		"UpgradeLevel3"
+		
+		"UpgradeLevel3" 
 		{
 			"ControlName"							"ImagePanel"
 			"fieldName"								"UpgradeLevel3"
@@ -121,12 +146,16 @@
 			"ypos"									"r60"
 			"wide"									"20"
 			"tall"									"20"
+			"autoResize"							"0"
+			"pinCorner"								"0"
 			"visible"								"1"
 			"enabled"								"1"
+			"tabPosition"							"0"
 			"image"									"../hud/hud_mvm_bomb_upgrade_3_disabled"
 			"scaleImage"							"1"
 		}
-		"UpgradeLevelBoss"
+
+		"UpgradeLevelBoss" 
 		{
 			"ControlName"							"ImagePanel"
 			"fieldName"								"UpgradeLevelBoss"
@@ -134,12 +163,16 @@
 			"ypos"									"r46"
 			"wide"									"20"
 			"tall"									"40"
+			"autoResize"							"0"
+			"pinCorner"								"0"
 			"visible"								"0"
 			"enabled"								"1"
+			"tabPosition"							"0"
 			"image"									"../hud/hud_mvm_bomb_upgrade_boss"
 			"scaleImage"							"1"
 		}
 	}
+	
 	"VictorySplash"
 	{
 		"ControlName"								"CVictorySplash"
@@ -150,8 +183,9 @@
 		"wide"										"f0"
 		"tall"										"480"
 		"visible"									"0"
-		"enabled"									"1"
+		"enabled"									"1"			
 	}
+	
 	"VictoryPanelContainer"
 	{
 		"ControlName"								"CMvMVictoryPanelContainer"
@@ -162,6 +196,7 @@
 		"tall"										"480"
 		"visible"									"0"
 	}
+	
 	"WaveLossPanel"
 	{
 		"ControlName"								"CMvMWaveLossPanel"
@@ -172,6 +207,7 @@
 		"tall"										"480"
 		"visible"									"0"
 	}
+	
 	"ServerChangeMessage"
 	{
 		"ControlName"								"EditablePanel"
@@ -181,7 +217,28 @@
 		"wide"										"f0"
 		"tall"										"480"
 		"visible"									"0"
+		
+		"Background"
+		{
+			"ControlName"							"ScalableImagePanel"
+			"fieldName"								"Background"
+			"xpos"									"c-90"
+			"ypos"									"400"
+			"wide"									"180"
+			"tall"									"16"
+			"autoResize"							"0"
+			"pinCorner"								"0"
+			"visible"								"1"
+			"enabled"								"1"
+			"image"									"../hud/color_panel_red"
 
+			"src_corner_height"						"23"
+			"src_corner_width"						"23"
+		
+			"draw_corner_width"						"3"
+			"draw_corner_height" 					"3"	
+		}
+	
 		"ServerChangeLabel"
 		{
 			"ControlName"							"CExLabel"
@@ -189,25 +246,13 @@
 			"font"									"m0refont12"
 			"textAlignment"							"center"
 			"labelText"								"%servermessage%"
-			"xpos"									"cs-0.5"
-			"ypos"									"r80"
+			"xpos"									"c-90"
+			"ypos"									"400"
 			"wide"									"180"
 			"tall"									"16"
 			"visible"								"1"
 			"enabled"								"1"
-			"fgcolor"								"White"
-			"proportionaltoparent"					"1"
-		}
-		"Background"
-		{
-			"ControlName"							"ScalableImagePanel"
-			"fieldName"								"Background"
-			"xpos"									"9999"
-			"ypos"									"9999"
-			"wide"									"0"
-			"tall"									"0"
-			"visible"								"0"
-			"enabled"								"0"
+			"fgcolor"								"255 255 255 255"		
 		}
 	}
 }

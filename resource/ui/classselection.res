@@ -8,1081 +8,1126 @@
 		"ypos"										"0"
 		"wide"										"f0"
 		"tall"										"480"
+		"autoResize"								"0"
+		"pinCorner"									"0"
 		"visible"									"1"
 		"enabled"									"1"
+		"tabPosition"								"0"
 	}
-
-	//==================================================================================================================================================
-	// CLASSES ANCHOR
-	// Moves all the class buttons at the same time
-	//==================================================================================================================================================
-	"ClassesAnchor"
+	
+	"random"
 	{
-		"ControlName"								"EditablePanel"
-		"fieldname"									"ClassesAnchor"
 		"xpos"										"c15"
-		"ypos"										"c-65"
-		"wide"										"10"
-		"tall"										"10"
-		"visible"									"0"
-		"enabled"									"0"
-	}
-
-	//==================================================================================================================================================
-	// LOADOUT EDIT
-	//==================================================================================================================================================
-	"EditLoadoutButton"
-	{
-		"ControlName"								"CExButton"
-		"fieldName"									"EditLoadoutButton"
-		"xpos"										"0"
-		"ypos"										"0"
+		"ypos"										"c60"
 		"zpos"										"6"
-		"wide"										"65"
+		"wide"										"75"
 		"tall"										"10"
 		"visible"									"1"
 		"enabled"									"1"
-		"labelText"									"Loadout (&E)"
-		"textAlignment"								"west"
-		"Command"									"openloadout"
-		"font"										"m0refont11"
+		"labelText"									"Random (&R)"
+		"textAlignment"								"south-west"
+		"Command"									"joinclass random"
+		"Default"									"1"
+		"font"										"default"
+			
+		"fgcolor"									"255 255 255 255"
+		"defaultFgColor_override" 					"255 255 255 255"
+		"armedFgColor_override" 					"Class Selection"
+		"depressedFgColor_override" 				"Class Selection"
+		"selectedFgColor_override" 					"Class Selection"
+
+		"paintbackground"							"0"
+		
 		"stayselectedonclick"						"1"
 		"selectonhover"								"1"
 		"keyboardinputenabled"						"0"
-
-		"paintbackground"							"0"
-		"fgcolor"									"White"
-		"defaultFgColor_override"					"White"
-		"armedFgColor_override"						"Class Selection"
-		"depressedFgColor_override"					"Class Selection"
-		"selectedFgColor_override"					"Class Selection"
-
-		"pin_to_sibling"							"ClassesAnchor"
+		
+		"SubImage"
+		{
+			"ControlName"							"ImagePanel"
+			"fieldName"								"SubImage"
+			"xpos"									"0"
+			"ypos"									"0"
+			"zpos"									"7"
+			"wide"									"50"
+			"tall"									"100"
+			"visible"								"1"
+			"enabled"								"1"
+			"image"									"class_sel_sm_random_inactive"
+			"scaleImage"							"1"
+		}				
 	}
-
-	//==================================================================================================================================================
-	// SCOUT
-	//==================================================================================================================================================
+		
 	"scout"
 	{
 		"ControlName"								"CExImageButton"
 		"fieldName"									"scout"
-		"xpos"										"0"
-		"ypos"										"7"
+		"xpos"										"c15"
+		"ypos"										"c-43"
 		"zpos"										"6"
-		"wide"										"65"
-		"tall"										"11"
+		"wide"										"75"
+		"tall"										"10"
 		"visible"									"1"
 		"enabled"									"1"
 		"labelText"									"&1  Scout"
-		"textAlignment"								"west"
+		"textAlignment"								"south-west"
 		"Command"									"joinclass scout"
-		"font"										"m0refont11"
+		"Default"									"0"
+		"font"										"default"
+		"fgcolor"									"255 255 255 255"
+		"defaultFgColor_override" 					"255 255 255 255"
+		"armedFgColor_override" 					"Class Selection"
+		"depressedFgColor_override"					"Class Selection"
+		"selectedFgColor_override" 					"Class Selection"
+		
+		"paintbackground"							"0"
+		
 		"stayselectedonclick"						"1"
 		"selectonhover"								"1"
 		"keyboardinputenabled"						"0"
-
-		"paintbackground"							"0"
-		"fgcolor"									"White"
-		"defaultFgColor_override"					"White"
-		"armedFgColor_override"						"Class Selection"
-		"depressedFgColor_override"					"Class Selection"
-		"selectedFgColor_override"					"Class Selection"
-
-		"pin_to_sibling"							"EditLoadoutButton"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_BOTTOMLEFT"
+		
+		"SubImage"
+		{
+			"ControlName"							"ImagePanel"
+			"fieldName"								"SubImage"
+			"xpos"									"0"
+			"ypos"									"0"
+			"zpos"									"7"
+			"wide"									"50"
+			"tall"									"100"
+			"visible"								"0"
+			"enabled"								"0"
+			"image"									"class_sel_sm_scout_inactive"
+			"scaleImage"							"1"
+		}				
 	}
-	"numScout"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"numScout"
-		"xpos"										"0"
-		"ypos"										"0"
-		"wide"										"50"
-		"tall"										"11"
-		"zpos"										"6"
-		"visible"									"1"
-		"enabled"									"1"
-		"textAlignment"								"west"
-		"labelText"									"%numScout%"
-		"font"										"m0refont11"
-		"fgcolor"									"White"
-
-		"pin_to_sibling"							"scout"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
-	}
-	"MvMUpgradeImageScout"
-	{
-		"ControlName"								"ImagePanel"
-		"fieldName"									"MvMUpgradeImageScout"
-		"xpos"										"2"
-		"ypos"										"1"
-		"zpos"										"10"
-		"wide"										"8"
-		"tall"										"8"
-		"visible"									"0"
-		"enabled"									"1"
-		"image"										"mvm/class_upgraded"
-		"scaleImage"								"1"
-
-		"pin_to_sibling"							"scout"
-		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
-		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
-	}
-
-	//==================================================================================================================================================
-	// SOLDIER
-	//==================================================================================================================================================
+	
 	"soldier"
 	{
 		"ControlName"								"CExImageButton"
 		"fieldName"									"soldier"
-		"xpos"										"0"
-		"ypos"										"0"
+		"xpos"										"c15"
+		"ypos"										"c-32"
 		"zpos"										"6"
-		"wide"										"65"
-		"tall"										"11"
+		"wide"										"75"
+		"tall"										"10"
 		"visible"									"1"
 		"enabled"									"1"
 		"labelText"									"&2  Soldier"
-		"textAlignment"								"west"
+		"textAlignment"								"south-west"
 		"Command"									"joinclass soldier"
-		"font"										"m0refont11"
+		"Default"									"0"
+		"font"										"default"
+			
+		"fgcolor"									"255 255 255 255"
+		"defaultFgColor_override" 					"255 255 255 255"
+		"armedFgColor_override" 					"Class Selection"
+		"depressedFgColor_override" 				"Class Selection"
+		"selectedFgColor_override" 					"Class Selection"
+		
+		"paintbackground"							"0"
+		
 		"stayselectedonclick"						"1"
 		"selectonhover"								"1"
 		"keyboardinputenabled"						"0"
-
-		"paintbackground"							"0"
-		"fgcolor"									"White"
-		"defaultFgColor_override"					"White"
-		"armedFgColor_override"						"Class Selection"
-		"depressedFgColor_override"					"Class Selection"
-		"selectedFgColor_override"					"Class Selection"
-
-		"pin_to_sibling"							"scout"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_BOTTOMLEFT"
+		
+		"SubImage"
+		{
+			"ControlName"							"ImagePanel"
+			"fieldName"								"SubImage"
+			"xpos"									"0"
+			"ypos"									"0"
+			"zpos"									"7"
+			"wide"									"50"
+			"tall"									"100"
+			"visible"								"1"
+			"enabled"								"1"
+			"image"									"class_sel_sm_soldier_inactive"
+			"scaleImage"							"1"
+		}				
 	}
-	"numSoldier"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"numSoldier"
-		"xpos"										"0"
-		"ypos"										"0"
-		"wide"										"50"
-		"tall"										"11"
-		"zpos"										"6"
-		"visible"									"1"
-		"enabled"									"1"
-		"textAlignment"								"west"
-		"labelText"									"%numSoldier%"
-		"font"										"m0refont11"
-		"fgcolor"									"White"
-
-		"pin_to_sibling"							"soldier"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
-	}
-	"MvMUpgradeImageSolider"
-	{
-		"ControlName"								"ImagePanel"
-		"fieldName"									"MvMUpgradeImageSolider"
-		"xpos"										"2"
-		"ypos"										"1"
-		"zpos"										"10"
-		"wide"										"8"
-		"tall"										"8"
-		"visible"									"0"
-		"enabled"									"1"
-		"image"										"mvm/class_upgraded"
-		"scaleImage"								"1"
-
-		"pin_to_sibling"							"soldier"
-		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
-		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
-	}
-
-	//==================================================================================================================================================
-	// PYRO
-	//==================================================================================================================================================
+	
 	"pyro"
 	{
 		"ControlName"								"CExImageButton"
 		"fieldName"									"pyro"
-		"xpos"										"0"
-		"ypos"										"0"
+		"xpos"										"c15"
+		"ypos"										"c-21"
 		"zpos"										"6"
-		"wide"										"65"
-		"tall"										"11"
+		"wide"										"75"
+		"tall"										"10"
 		"visible"									"1"
 		"enabled"									"1"
 		"labelText"									"&3  Pyro"
-		"textAlignment"								"west"
+		"textAlignment"								"south-west"
 		"Command"									"joinclass pyro"
-		"font"										"m0refont11"
+		"Default"									"0"
+		"font"										"default"
+			
+		"fgcolor"									"255 255 255 255"
+		"defaultFgColor_override" 					"255 255 255 255"
+		"armedFgColor_override" 					"Class Selection"
+		"depressedFgColor_override" 				"Class Selection"
+		"selectedFgColor_override" 					"Class Selection"
+		
+		"paintbackground"							"0"
+		
 		"stayselectedonclick"						"1"
 		"selectonhover"								"1"
 		"keyboardinputenabled"						"0"
-
-		"paintbackground"							"0"
-		"fgcolor"									"White"
-		"defaultFgColor_override"					"White"
-		"armedFgColor_override"						"Class Selection"
-		"depressedFgColor_override"					"Class Selection"
-		"selectedFgColor_override"					"Class Selection"
-
-		"pin_to_sibling"							"soldier"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_BOTTOMLEFT"
+		
+		"SubImage"
+		{
+			"ControlName"							"ImagePanel"
+			"fieldName"								"SubImage"
+			"xpos"									"0"
+			"ypos"									"0"
+			"zpos"									"7"
+			"wide"									"50"
+			"tall"									"100"
+			"visible"								"1"
+			"enabled"								"1"
+			"image"									"class_sel_sm_pyro_inactive"
+			"scaleImage"							"1"
+		}				
 	}
-	"numPyro"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"numPyro"
-		"xpos"										"0"
-		"ypos"										"0"
-		"wide"										"50"
-		"tall"										"11"
-		"zpos"										"6"
-		"visible"									"1"
-		"enabled"									"1"
-		"textAlignment"								"west"
-		"labelText"									"%numPyro%"
-		"font"										"m0refont11"
-		"fgcolor"									"White"
-
-		"pin_to_sibling"							"pyro"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
-	}
-	"MvMUpgradeImagePyro"
-	{
-		"ControlName"								"ImagePanel"
-		"fieldName"									"MvMUpgradeImagePyro"
-		"xpos"										"2"
-		"ypos"										"1"
-		"zpos"										"10"
-		"wide"										"8"
-		"tall"										"8"
-		"visible"									"0"
-		"enabled"									"1"
-		"image"										"mvm/class_upgraded"
-		"scaleImage"								"1"
-
-		"pin_to_sibling"							"pyro"
-		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
-		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
-	}
-
-	//==================================================================================================================================================
-	// DEMOMAN
-	//==================================================================================================================================================
+	
 	"demoman"
 	{
 		"ControlName"								"CExImageButton"
 		"fieldName"									"demoman"
-		"xpos"										"0"
-		"ypos"										"0"
+		"ControlName"								"ImageButton"
+		"fieldName"									"demoman_blue"
+		"xpos"										"c15"
+		"ypos"										"c-10"
 		"zpos"										"6"
-		"wide"										"65"
-		"tall"										"11"
+		"wide"										"75"
+		"tall"										"10"
 		"visible"									"1"
 		"enabled"									"1"
 		"labelText"									"&4  Demoman"
-		"textAlignment"								"west"
+		"textAlignment"								"south-west"
 		"Command"									"joinclass demoman"
-		"font"										"m0refont11"
+		"Default"									"0"
+		"font"										"default"
+			
+		"fgcolor"									"255 255 255 255"
+		"defaultFgColor_override" 					"255 255 255 255"
+		"armedFgColor_override" 					"Class Selection"
+		"depressedFgColor_override" 				"Class Selection"
+		"selectedFgColor_override" 					"Class Selection"
+		
+		"paintbackground"							"0"
+		
 		"stayselectedonclick"						"1"
 		"selectonhover"								"1"
 		"keyboardinputenabled"						"0"
-
-		"paintbackground"							"0"
-		"fgcolor"									"White"
-		"defaultFgColor_override"					"White"
-		"armedFgColor_override"						"Class Selection"
-		"depressedFgColor_override"					"Class Selection"
-		"selectedFgColor_override"					"Class Selection"
-
-		"pin_to_sibling"							"pyro"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_BOTTOMLEFT"
+		
+		"SubImage"
+		{
+			"ControlName"							"ImagePanel"
+			"fieldName"								"SubImage"
+			"xpos"									"0"
+			"ypos"									"0"
+			"zpos"									"7"
+			"wide"									"50"
+			"tall"									"100"
+			"visible"								"1"
+			"enabled"								"1"
+			"image"									"class_sel_sm_demo_inactive"
+			"scaleImage"							"1"
+		}				
 	}
-	"numDemoman"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"numDemoman"
-		"xpos"										"0"
-		"ypos"										"0"
-		"wide"										"50"
-		"tall"										"11"
-		"zpos"										"6"
-		"visible"									"1"
-		"enabled"									"1"
-		"textAlignment"								"west"
-		"labelText"									"%numDemoman%"
-		"font"										"m0refont11"
-		"fgcolor"									"White"
-
-		"pin_to_sibling"							"demoman"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
-	}
-	"MvMUpgradeImageDemoman"
-	{
-		"ControlName"								"ImagePanel"
-		"fieldName"									"MvMUpgradeImageDemoman"
-		"xpos"										"2"
-		"ypos"										"1"
-		"zpos"										"10"
-		"wide"										"8"
-		"tall"										"8"
-		"visible"									"0"
-		"enabled"									"1"
-		"image"										"mvm/class_upgraded"
-		"scaleImage"								"1"
-
-		"pin_to_sibling"							"demoman"
-		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
-		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
-	}
-
-	//==================================================================================================================================================
-	// HEAVY
-	//==================================================================================================================================================
+	
 	"heavyweapons"
 	{
 		"ControlName"								"CExImageButton"
 		"fieldName"									"heavyweapons"
-		"xpos"										"0"
-		"ypos"										"0"
+		"xpos"										"c15"
+		"ypos"										"c1"
 		"zpos"										"6"
-		"wide"										"65"
-		"tall"										"11"
+		"wide"										"75"
+		"tall"										"10"
 		"visible"									"1"
 		"enabled"									"1"
 		"labelText"									"&5  Heavy"
-		"textAlignment"								"west"
+		"textAlignment"								"south-west"
 		"Command"									"joinclass heavyweapons"
-		"font"										"m0refont11"
+		"Default"									"0"
+		"font"										"default"
+			
+		"fgcolor"									"255 255 255 255"
+		"defaultFgColor_override" 					"255 255 255 255"
+		"armedFgColor_override" 					"Class Selection"
+		"depressedFgColor_override" 				"Class Selection"
+		"selectedFgColor_override" 					"Class Selection"
+		
+		"paintbackground"							"0"
+		
 		"stayselectedonclick"						"1"
 		"selectonhover"								"1"
 		"keyboardinputenabled"						"0"
-
-		"paintbackground"							"0"
-		"fgcolor"									"White"
-		"defaultFgColor_override"					"White"
-		"armedFgColor_override"						"Class Selection"
-		"depressedFgColor_override"					"Class Selection"
-		"selectedFgColor_override"					"Class Selection"
-
-		"pin_to_sibling"							"demoman"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_BOTTOMLEFT"
+		
+		"SubImage"
+		{
+			"ControlName"							"ImagePanel"
+			"fieldName"								"SubImage"
+			"xpos"									"0"
+			"ypos"									"0"
+			"zpos"									"7"
+			"wide"									"50"
+			"tall"									"100"
+			"visible"								"1"
+			"enabled"								"1"
+			"image"									"class_sel_sm_heavy_inactive"
+			"scaleImage"							"1"
+		}				
 	}
-	"numHeavy"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"numHeavy"
-		"xpos"										"0"
-		"ypos"										"0"
-		"wide"										"50"
-		"tall"										"11"
-		"zpos"										"6"
-		"visible"									"1"
-		"enabled"									"1"
-		"textAlignment"								"west"
-		"labelText"									"%numHeavy%"
-		"font"										"m0refont11"
-		"fgcolor"									"White"
-
-		"pin_to_sibling"							"heavyweapons"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
-	}
-	"MvMUpgradeImageHeavy"
-	{
-		"ControlName"								"ImagePanel"
-		"fieldName"									"MvMUpgradeImageHeavy"
-		"xpos"										"2"
-		"ypos"										"1"
-		"zpos"										"10"
-		"wide"										"8"
-		"tall"										"8"
-		"visible"									"0"
-		"enabled"									"1"
-		"image"										"mvm/class_upgraded"
-		"scaleImage"								"1"
-
-		"pin_to_sibling"							"heavyweapons"
-		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
-		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
-	}
-
-	//==================================================================================================================================================
-	// ENGINEER
-	//==================================================================================================================================================
+	
 	"engineer"
 	{
 		"ControlName"								"CExImageButton"
 		"fieldName"									"engineer"
-		"xpos"										"0"
-		"ypos"										"0"
+		"xpos"										"c15"
+		"ypos"										"c12"
 		"zpos"										"6"
-		"wide"										"65"
-		"tall"										"11"
+		"wide"										"75"
+		"tall"										"10"
 		"visible"									"1"
 		"enabled"									"1"
 		"labelText"									"&6  Engineer"
-		"textAlignment"								"west"
+		"textAlignment"								"south-west"
 		"Command"									"joinclass engineer"
-		"font"										"m0refont11"
+		"Default"									"0"
+		"font"										"default"
+			
+		"fgcolor"									"255 255 255 255"
+		"defaultFgColor_override" 					"255 255 255 255"
+		"armedFgColor_override" 					"Class Selection"
+		"depressedFgColor_override" 				"Class Selection"
+		"selectedFgColor_override" 					"Class Selection"
+		
+		"paintbackground"							"0"
+		
 		"stayselectedonclick"						"1"
 		"selectonhover"								"1"
 		"keyboardinputenabled"						"0"
-
-		"paintbackground"							"0"
-		"fgcolor"									"White"
-		"defaultFgColor_override"					"White"
-		"armedFgColor_override"						"Class Selection"
-		"depressedFgColor_override"					"Class Selection"
-		"selectedFgColor_override"					"Class Selection"
-
-		"pin_to_sibling"							"heavyweapons"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_BOTTOMLEFT"
+		
+		"SubImage"
+		{
+			"ControlName"							"ImagePanel"
+			"fieldName"								"SubImage"
+			"xpos"									"0"
+			"ypos"									"0"
+			"zpos"									"7"
+			"wide"									"50"
+			"tall"									"100"
+			"visible"								"1"
+			"enabled"								"1"
+			"image"									"class_sel_sm_engineer_inactive"
+			"scaleImage"							"1"
+		}				
 	}
-	"numEngineer"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"numEngineer"
-		"xpos"										"0"
-		"ypos"										"0"
-		"wide"										"50"
-		"tall"										"11"
-		"zpos"										"6"
-		"visible"									"1"
-		"enabled"									"1"
-		"textAlignment"								"west"
-		"labelText"									"%numEngineer%"
-		"font"										"m0refont11"
-		"fgcolor"									"White"
-
-		"pin_to_sibling"							"engineer"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
-	}
-	"MvMUpgradeImageEngineer"
-	{
-		"ControlName"								"ImagePanel"
-		"fieldName"									"MvMUpgradeImageEngineer"
-		"xpos"										"2"
-		"ypos"										"1"
-		"zpos"										"10"
-		"wide"										"8"
-		"tall"										"8"
-		"visible"									"0"
-		"enabled"									"1"
-		"image"										"mvm/class_upgraded"
-		"scaleImage"								"1"
-
-		"pin_to_sibling"							"engineer"
-		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
-		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
-	}
-
-	//==================================================================================================================================================
-	// MEDIC
-	//==================================================================================================================================================
+	
 	"medic"
 	{
 		"ControlName"								"CExImageButton"
 		"fieldName"									"medic"
-		"xpos"										"0"
-		"ypos"										"0"
+		"xpos"										"c15"
+		"ypos"										"c23"
 		"zpos"										"6"
-		"wide"										"65"
-		"tall"										"11"
+		"wide"										"75"
+		"tall"										"10"
 		"visible"									"1"
 		"enabled"									"1"
 		"labelText"									"&7  Medic"
-		"textAlignment"								"west"
+		"textAlignment"								"south-west"
 		"Command"									"joinclass medic"
-		"font"										"m0refont11"
+		"Default"									"0"
+		"font"										"default"
+			
+		"fgcolor"									"255 255 255 255"
+		"defaultFgColor_override" 					"255 255 255 255"
+		"armedFgColor_override" 					"Class Selection"
+		"depressedFgColor_override" 				"Class Selection"
+		"selectedFgColor_override" 					"Class Selection"
+		
+		"paintbackground"							"0"
+		
 		"stayselectedonclick"						"1"
 		"selectonhover"								"1"
 		"keyboardinputenabled"						"0"
-
-		"paintbackground"							"0"
-		"fgcolor"									"White"
-		"defaultFgColor_override"					"White"
-		"armedFgColor_override"						"Class Selection"
-		"depressedFgColor_override"					"Class Selection"
-		"selectedFgColor_override"					"Class Selection"
-
-		"pin_to_sibling"							"engineer"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_BOTTOMLEFT"
+		
+		"SubImage"
+		{
+			"ControlName"							"ImagePanel"
+			"fieldName"								"SubImage"
+			"xpos"									"0"
+			"ypos"									"0"
+			"zpos"									"7"
+			"wide"									"50"
+			"tall"									"100"
+			"visible"								"1"
+			"enabled"								"1"
+			"image"									"class_sel_sm_medic_inactive"
+			"scaleImage"							"1"
+		}				
 	}
-	"numMedic"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"numMedic"
-		"xpos"										"0"
-		"ypos"										"0"
-		"wide"										"50"
-		"tall"										"11"
-		"zpos"										"6"
-		"visible"									"1"
-		"enabled"									"1"
-		"textAlignment"								"west"
-		"labelText"									"%numMedic%"
-		"font"										"m0refont11"
-		"fgcolor"									"White"
-
-		"pin_to_sibling"							"medic"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
-	}
-	"MvMUpgradeImageMedic"
-	{
-		"ControlName"								"ImagePanel"
-		"fieldName"									"MvMUpgradeImageMedic"
-		"xpos"										"2"
-		"ypos"										"1"
-		"zpos"										"10"
-		"wide"										"8"
-		"tall"										"8"
-		"visible"									"0"
-		"enabled"									"1"
-		"image"										"mvm/class_upgraded"
-		"scaleImage"								"1"
-
-		"pin_to_sibling"							"medic"
-		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
-		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
-	}
-
-	//==================================================================================================================================================
-	// SNIPER
-	//==================================================================================================================================================
+	
 	"sniper"
 	{
 		"ControlName"								"CExImageButton"
 		"fieldName"									"sniper"
-		"xpos"										"0"
-		"ypos"										"0"
+		"xpos"										"c15"
+		"ypos"										"c34"
 		"zpos"										"6"
-		"wide"										"65"
-		"tall"										"11"
+		"wide"										"75"
+		"tall"										"10"
 		"visible"									"1"
 		"enabled"									"1"
 		"labelText"									"&8  Sniper"
-		"textAlignment"								"west"
+		"textAlignment"								"south-west"
 		"Command"									"joinclass sniper"
-		"font"										"m0refont11"
+		"Default"									"0"
+		"font"										"default"
+
+		"fgcolor"									"255 255 255 255"
+		"defaultFgColor_override" 					"255 255 255 255"
+		"armedFgColor_override" 					"Class Selection"
+		"depressedFgColor_override" 				"Class Selection"
+		"selectedFgColor_override" 					"Class Selection"
+		
+		"paintbackground"							"0"
+		
 		"stayselectedonclick"						"1"
 		"selectonhover"								"1"
 		"keyboardinputenabled"						"0"
-
-		"paintbackground"							"0"
-		"fgcolor"									"White"
-		"defaultFgColor_override"					"White"
-		"armedFgColor_override"						"Class Selection"
-		"depressedFgColor_override"					"Class Selection"
-		"selectedFgColor_override"					"Class Selection"
-
-		"pin_to_sibling"							"medic"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_BOTTOMLEFT"
+		
+		"SubImage"
+		{
+			"ControlName"							"ImagePanel"
+			"fieldName"								"SubImage"
+			"xpos"									"0"
+			"ypos"									"0"
+			"zpos"									"7"
+			"wide"									"50"
+			"tall"									"100"
+			"visible"								"1"
+			"enabled"								"1"
+			"image"									"class_sel_sm_sniper_inactive"
+			"scaleImage"							"1"
+		}				
 	}
-	"numSniper"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"numSniper"
-		"xpos"										"0"
-		"ypos"										"0"
-		"wide"										"50"
-		"tall"										"11"
-		"zpos"										"6"
-		"visible"									"1"
-		"enabled"									"1"
-		"textAlignment"								"west"
-		"labelText"									"%numSniper%"
-		"font"										"m0refont11"
-		"fgcolor"									"White"
-
-		"pin_to_sibling"							"sniper"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
-	}
-	"MvMUpgradeImageSniper"
-	{
-		"ControlName"								"ImagePanel"
-		"fieldName"									"MvMUpgradeImageSniper"
-		"xpos"										"2"
-		"ypos"										"1"
-		"zpos"										"10"
-		"wide"										"8"
-		"tall"										"8"
-		"visible"									"0"
-		"enabled"									"1"
-		"image"										"mvm/class_upgraded"
-		"scaleImage"								"1"
-
-		"pin_to_sibling"							"sniper"
-		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
-		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
-	}
-
-	//==================================================================================================================================================
-	// SPY
-	//==================================================================================================================================================
+	
 	"spy"
 	{
 		"ControlName"								"CExImageButton"
 		"fieldName"									"spy"
-		"xpos"										"0"
-		"ypos"										"0"
+		"ControlName"								"ImageButton"
+		"fieldName"									"spy_blue"
+		"xpos"										"c15"
+		"ypos"										"c45"
 		"zpos"										"6"
-		"wide"										"65"
-		"tall"										"11"
+		"wide"										"75"
+		"tall"										"10"
 		"visible"									"1"
 		"enabled"									"1"
 		"labelText"									"&9  Spy"
-		"textAlignment"								"west"
+		"textAlignment"								"south-west"
 		"Command"									"joinclass spy"
-		"font"										"m0refont11"
+		"Default"									"0"
+		"font"										"default"
+			
+		"fgcolor"									"255 255 255 255"
+		"defaultFgColor_override" 					"255 255 255 255"
+		"armedFgColor_override" 					"Class Selection"
+		"depressedFgColor_override" 				"Class Selection"
+		"selectedFgColor_override" 					"Class Selection"
+		
+		"paintbackground"							"0"
+		
 		"stayselectedonclick"						"1"
 		"selectonhover"								"1"
 		"keyboardinputenabled"						"0"
-
-		"paintbackground"							"0"
-		"fgcolor"									"White"
-		"defaultFgColor_override"					"White"
-		"armedFgColor_override"						"Class Selection"
-		"depressedFgColor_override"					"Class Selection"
-		"selectedFgColor_override"					"Class Selection"
-
-		"pin_to_sibling"							"sniper"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_BOTTOMLEFT"
+		
+		"SubImage"
+		{
+			"ControlName"							"ImagePanel"
+			"fieldName"								"SubImage"
+			"xpos"									"0"
+			"ypos"									"0"
+			"zpos"									"7"
+			"wide"									"50"
+			"tall"									"100"
+			"visible"								"0"
+			"enabled"								"0"
+			"image"									"class_sel_sm_spy_inactive"
+			"scaleImage"							"1"
+		}				
 	}
+	
+	"EditLoadoutButton"
+	{
+		"ControlName"								"CExButton"
+		"fieldName"									"EditLoadoutButton"
+		"xpos"										"c15"
+		"ypos"										"c-58"
+		"zpos"										"6"
+		"wide"										"75"
+		"tall"										"10"
+		"visible"									"1"
+		"enabled"									"1"
+		"labelText"									"Loadout (&E)"
+		"textAlignment"								"south-west"
+		"Command"									"openloadout"
+		"font"										"default"
+		"fgcolor"									"255 255 255 255"
+		"defaultFgColor_override" 					"255 255 255 255"
+		"armedFgColor_override" 					"Class Selection"
+		"depressedFgColor_override" 				"Class Selection"
+		"selectedFgColor_override" 					"Class Selection"
+		
+		"paintbackground"							"0"
+		
+		"stayselectedonclick"						"1"
+		"selectonhover"								"1"
+		"keyboardinputenabled"						"0"
+	}
+	
+	"numScout"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"numScout"
+		"xpos"										"c80"
+		"textAlignment"								"south-west"
+		"wide"										"120"
+		"ypos"										"c-43"
+		"zpos"										"6"
+		"tall"										"10"
+		"autoResize"								"1"
+		"pinCorner"									"2"
+		"visible"									"1"
+		"enabled"									"1"
+		"tabPosition"								"0"
+		"labelText"									"%numScout%"
+		"font"										"default"
+		"fgcolor"									"255 255 255 255"
+	}
+	
+	"numSoldier"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"numSoldier"
+		"xpos"										"c80"
+		"textAlignment"								"south-west"
+		"wide"										"120"
+		"ypos"										"c-32"
+		"zpos"										"6"
+		"tall"       								"10"
+		"wide"										"20"
+		"autoResize"								"1"
+		"pinCorner"									"2"
+		"visible"									"1"
+		"enabled"									"1"
+		"tabPosition"								"0"
+		"labelText"									"%numSoldier%"
+		"font"										"default"
+		"fgcolor"									"255 255 255 255"
+	}		
+	
+	"numPyro"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"numPyro"
+		"xpos"										"c80"
+		"textAlignment"								"south-west"
+		"wide"										"120"
+		"ypos"										"c-21"
+		"zpos"										"6"
+		"tall"										"10"
+		"autoResize"								"1"
+		"pinCorner"									"2"
+		"visible"									"1"
+		"enabled"									"1"
+		"tabPosition"								"0"
+		"labelText"									"%numPyro%"
+		"font"										"default"
+		"fgcolor"									"255 255 255 255"
+	}			
+	
+	"numDemoman"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"numDemoman"
+		"xpos"										"c80"
+		"ypos"										"c-10"
+		"zpos"										"6"
+		"wide"										"120"
+		"tall"										"10"
+		"autoResize"								"1"
+		"pinCorner"									"2"
+		"visible"									"1"
+		"enabled"									"1"
+		"tabPosition"								"0"
+		"labelText"									"%numDemoman%"
+		"textAlignment"								"south-west"
+		"font"										"default"
+		"fgcolor"									"255 255 255 255"
+	}				
+	
+	"numHeavy"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"numHeavy"
+		"xpos"										"c80"
+		"textAlignment"								"south-west"
+		"wide"										"120"
+		"ypos"										"c1"
+		"zpos"										"6"
+		"tall"										"10"
+		"autoResize"								"1"
+		"pinCorner"									"2"
+		"visible"									"1"
+		"enabled"									"1"
+		"tabPosition"								"0"
+		"labelText"									"%numHeavy%"
+		"font"										"default"
+		"fgcolor"									"255 255 255 255"
+	}					
+	
+	"numEngineer"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"numEngineer"
+		"xpos"										"c80"
+		"textAlignment"								"south-west"
+		"wide"										"120"
+		"ypos"										"c12"
+		"zpos"										"6"
+		"tall"										"10"
+		"autoResize"								"1"
+		"pinCorner"									"2"
+		"visible"									"1"
+		"enabled"									"1"
+		"tabPosition"								"0"
+		"labelText"									"%numEngineer%"
+		"font"										"default"
+		"fgcolor"									"255 255 255 255"
+	}						
+	
+	"numMedic"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"numMedic"
+		"xpos"										"c80"
+		"textAlignment"								"south-west"
+		"wide"										"120"
+		"ypos"										"c23"
+		"zpos"										"6"
+		"tall"										"10"
+		"autoResize"								"1"
+		"pinCorner"									"2"
+		"visible"									"1"
+		"enabled"									"1"
+		"tabPosition"								"0"
+		"labelText"									"%numMedic%"
+		"font"										"default"
+		"fgcolor"									"255 255 255 255"
+	}							
+	
+	"numSniper"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"numSniper"
+		"xpos"										"c80"
+		"textAlignment"								"south-west"
+		"wide"										"120"
+		"ypos"										"c34"
+		"zpos"										"6"
+		"tall"										"10"
+		"autoResize"								"1"
+		"pinCorner"									"2"
+		"visible"									"1"
+		"enabled"									"1"
+		"tabPosition"								"0"
+		"labelText"									"%numSniper%"
+		"font"										"default"
+		"fgcolor"									"255 255 255 255"
+	}						
+	
 	"numSpy"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"numSpy"
-		"xpos"										"0"
-		"ypos"										"0"
-		"wide"										"50"
-		"tall"										"11"
+		"xpos"										"c80"
+		"textAlignment"								"south-west"
+		"wide"										"120"
+		"ypos"										"c45"
 		"zpos"										"6"
+		"tall"										"10"
+		"autoResize"								"1"
+		"pinCorner"									"2"
 		"visible"									"1"
 		"enabled"									"1"
-		"textAlignment"								"west"
+		"tabPosition"								"0"
 		"labelText"									"%numSpy%"
-		"font"										"m0refont11"
-		"fgcolor"									"White"
-
-		"pin_to_sibling"							"spy"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+		"font"										"default"
+		"fgcolor"									"255 255 255 255"
 	}
-	"MvMUpgradeImageSpy"
-	{
-		"ControlName"								"ImagePanel"
-		"fieldName"									"MvMUpgradeImageSpy"
-		"xpos"										"2"
-		"ypos"										"1"
-		"zpos"										"10"
-		"wide"										"8"
-		"tall"										"8"
-		"visible"									"0"
-		"enabled"									"1"
-		"image"										"mvm/class_upgraded"
-		"scaleImage"								"1"
-
-		"pin_to_sibling"							"spy"
-		"pin_corner_to_sibling"						"PIN_CENTER_RIGHT"
-		"pin_to_sibling_corner"						"PIN_CENTER_LEFT"
-	}
-
-	//==================================================================================================================================================
-	// RANDOM
-	//==================================================================================================================================================
-	"random"
-	{
-		"xpos"										"0"
-		"ypos"										"7"
-		"zpos"										"6"
-		"wide"										"65"
-		"tall"										"11"
-		"visible"									"1"
-		"enabled"									"1"
-		"labelText"									"Random (&R)"
-		"textAlignment"								"west"
-		"Command"									"joinclass random"
-		"font"										"m0refont11"
-		"stayselectedonclick"						"1"
-		"selectonhover"								"1"
-		"keyboardinputenabled"						"0"
-
-		"paintbackground"							"0"
-		"fgcolor"									"White"
-		"defaultFgColor_override"					"White"
-		"armedFgColor_override"						"Class Selection"
-		"depressedFgColor_override"					"Class Selection"
-		"selectedFgColor_override"					"Class Selection"
-
-		"pin_to_sibling"							"spy"
-		"pin_corner_to_sibling"						"PIN_TOPLEFT"
-		"pin_to_sibling_corner"						"PIN_BOTTOMLEFT"
-	}
-
-	//==================================================================================================================================================
-	// 3D PLAYER MODEL
-	//==================================================================================================================================================
+	
 	"TFPlayerModel"
 	{
 		"ControlName"								"CTFPlayerModelPanel"
 		"fieldName"									"TFPlayerModel"
+		
 		"xpos"										"c-280"
 		"ypos"										"0"
-		"zpos"										"6"
+		"zpos"										"6"		
 		"wide"										"480"
 		"tall"										"480"
+		
+		"autoResize"								"0"
+		"pinCorner"									"0"
 		"visible"									"1"
 		"enabled"									"1"
-
+		
 		"render_texture"							"0"
 		"fov"										"50"
 		"allow_rot"									"0"
 
-		"paintbackground"							"0"
-		"paintbackgroundenabled"					"0"
-
+		"paintbackground"							"1"		
+		"paintbackgroundenabled" 					"1"
+		"bgcolor_override" 							"255 255 255 0"
+		
 		"model"
 		{
 			"force_pos"								"1"
 
-			"angles_x"								"0"
-			"angles_y"								"180"
-			"angles_z"								"0"
-			"origin_x"								"320"
-			"origin_y"								"10"
-			"origin_z"								"-40"
+			"angles_x" 								"0"
+			"angles_y" 								"180"
+			"angles_z" 								"0"
+			"origin_x" 								"320"
+			"origin_y" 								"10"
+			"origin_z" 								"-49"
 			"frame_origin_x"						"0"
 			"frame_origin_y"						"0"
 			"frame_origin_z"						"0"
-			"spotlight"								"1"
-
+			"spotlight" 							"1"
+		
 			"modelname"								""
 			"vcd"									"class_select.vcd"
 		}
 	}
-
-
-
-	//==================================================================================================================================================
-	// REMOVED ELEMENTS
-	//==================================================================================================================================================
-
+	
+	"MvMUpgradeImageScout"
+	{
+		"ControlName"								"ImagePanel"
+		"fieldName"									"MvMUpgradeImageScout"
+		"xpos"										"c-270"
+		"ypos"										"30"
+		"zpos"										"10"
+		"wide"										"10"
+		"tall"										"10"
+		"visible"									"0"
+		"enabled"									"1"
+		"image"										"mvm/class_upgraded"
+		"scaleImage"								"1"
+	}
+	
+	"MvMUpgradeImageSolider"
+	{
+		"ControlName"								"ImagePanel"
+		"fieldName"									"MvMUpgradeImageSolider"
+		"xpos"										"c-220"
+		"ypos"										"30"
+		"zpos"										"10"
+		"wide"										"10"
+		"tall"										"10"
+		"visible"									"0"
+		"enabled"									"1"
+		"image"										"mvm/class_upgraded"
+		"scaleImage"								"1"
+	}
+	
+	"MvMUpgradeImagePyro" 
+	{
+		"ControlName"								"ImagePanel"
+		"fieldName"									"MvMUpgradeImagePyro" 
+		"xpos"										"c-170"
+		"ypos"										"30"
+		"zpos"										"10"
+		"wide"										"10"
+		"tall"										"10"
+		"visible"									"0"
+		"enabled"									"1"
+		"image"										"mvm/class_upgraded"
+		"scaleImage"								"1"
+	}
+	
+	"MvMUpgradeImageDemoman" 
+	{
+		"ControlName"								"ImagePanel"
+		"fieldName"									"MvMUpgradeImageDemoman" 
+		"xpos"										"c-80"
+		"ypos"										"30"
+		"zpos"										"10"
+		"wide"										"10"
+		"tall"										"10"
+		"visible"									"0"
+		"enabled"									"1"
+		"image"										"mvm/class_upgraded"
+		"scaleImage"								"1"
+	}
+	
+	"MvMUpgradeImageHeavy"
+	{
+		"ControlName"								"ImagePanel"
+		"fieldName"									"MvMUpgradeImageHeavy" 
+		"xpos"										"c-30"
+		"ypos"										"30"
+		"zpos"										"10"
+		"wide"										"10"
+		"tall"										"10"
+		"visible"									"0"
+		"enabled"									"1"
+		"image"										"mvm/class_upgraded"
+		"scaleImage"								"1"
+	}
+	
+	"MvMUpgradeImageEngineer"
+	{
+		"ControlName"								"ImagePanel"
+		"fieldName"									"MvMUpgradeImageEngineer"
+		"xpos"										"c20"
+		"ypos"										"30"
+		"zpos"										"10"
+		"wide"										"10"
+		"tall"										"10"
+		"visible"									"0"
+		"enabled"									"1"
+		"image"										"mvm/class_upgraded"
+		"scaleImage"								"1"
+	}
+	
+	"MvMUpgradeImageMedic"
+	{
+		"ControlName"								"ImagePanel"
+		"fieldName"									"MvMUpgradeImageMedic"
+		"xpos"										"c108"
+		"ypos"										"30"
+		"zpos"										"10"
+		"wide"										"10"
+		"tall"										"10"
+		"visible"									"0"
+		"enabled"									"1"
+		"image"										"mvm/class_upgraded"
+		"scaleImage"								"1"
+	}
+	
+	"MvMUpgradeImageSniper"
+	{
+		"ControlName"								"ImagePanel"
+		"fieldName"									"MvMUpgradeImageSniper"
+		"xpos"										"c158"
+		"ypos"										"30"
+		"zpos"										"10"
+		"wide"										"10"
+		"tall"										"10"
+		"visible"									"0"
+		"enabled"									"1"
+		"image"										"mvm/class_upgraded"
+		"scaleImage"								"1"
+	}
+	
+	"MvMUpgradeImageSpy"
+	{
+		"ControlName"								"ImagePanel"
+		"fieldName"									"MvMUpgradeImageSpy"
+		"xpos"										"c208"
+		"ypos"										"30"
+		"zpos"										"10"
+		"wide"										"10"
+		"tall"										"10"
+		"visible"									"0"
+		"enabled"									"1"
+		"image"										"mvm/class_upgraded"
+		"scaleImage"								"1"
+	}
+	
+	
+	
+	
+	
+	//////////////////////////////////REMOVED STUFF//////////////////////////////////
+	
 	"ResetButton"
 	{
 		"ControlName"								"CExButton"
 		"fieldName"									"ResetButton"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+
 	"ClassMenuSelect"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"ClassMenuSelect"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"MenuBG"
 	{
 		"ControlName"								"CModelPanel"
 		"fieldName"									"MenuBG"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
-	}
+	}	
+
 	"Hint"
-	{
+	{	
 		"ControlName"								"CExLabel"
 		"fieldName"									"Hint"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"ShadedBar"
 	{
 		"ControlName"								"ImagePanel"
 		"fieldName"									"ShadedBar"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"SysMenu"
 	{
 		"ControlName"								"Menu"
 		"fieldName"									"SysMenu"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"localPlayerImage"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"localPlayerImage"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"localPlayerBG"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"localPlayerBG"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"countImage0"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"countImage0"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
-	}
+	}							
+	
 	"countImage1"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"countImage1"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"countImage2"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"countImage2"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"countImage3"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"countImage3"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"countImage4"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"countImage4"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"countImage5"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"countImage5"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"countImage6"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"countImage6"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"countImage7"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"countImage7"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"countImage8"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"countImage8"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"countImage9"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"countImage9"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"countImage10"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"countImage10"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"CountLabel"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"CountLabel"
 		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+
 	"CancelButton"
 	{
 		"ControlName"								"CExButton"
 		"fieldName"									"CancelButton"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"StartExplanation"
 	{
 		"ControlName"								"CExplanationPopup"
 		"fieldName"									"StartExplanation"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"Offense"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"Offense"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"Defense"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"Defense"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"Support"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"Support"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"ClassTipsPanel"
 	{
 		"ControlName"								"CTFClassTipsPanel"
 		"fieldName"									"ClassTipsPanel"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
+	
 	"ClassHighlightPanel"
 	{
 		"ControlName"								"CExplanationPopup"
 		"fieldName"									"ClassHighlightPanel"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
-	}
+	}		
 }

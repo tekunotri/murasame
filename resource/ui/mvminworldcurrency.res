@@ -4,68 +4,72 @@
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"CurrencyGood"
-		"xpos"										"0"
-		"ypos"										"0"
+		"font"										"m0refont16"
+		"fgcolor"									"255 0 0 255"
+		"xpos"										"9"
+		"ypos"										"1"
 		"zpos"										"4"
-		"wide"										"f0"
-		"tall"										"f0"
+		"wide"										"90"
+		"tall"										"14"
 		"visible"									"1"
 		"enabled"									"1"
-		"proportionaltoparent"						"1"
+		"textAlignment"								"center"	
 		"labelText"									"%currency%"
-		"textAlignment"								"center"
-		"font"										"m0refont16"
-		"fgcolor"									"100 255 0 255"
 	}
+	
 	"CurrencyBad"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"CurrencyBad"
-		"xpos"										"0"
-		"ypos"										"0"
-		"zpos"										"4"
-		"wide"										"f0"
-		"tall"										"f0"
-		"visible"									"1"
-		"enabled"									"1"
-		"proportionaltoparent"						"1"
-		"labelText"									"%currency%"
-		"textAlignment"								"center"
 		"font"										"m0refont16"
 		"fgcolor"									"255 0 0 255"
+		"xpos"										"9"
+		"ypos"										"1"
+		"zpos"										"4"
+		"wide"										"90"
+		"tall"										"14"
+		"visible"									"1"
+		"enabled"									"1"
+		"textAlignment"								"center"	
+		"labelText"									"%currency%"
 	}
+	
 	"CurrencyShadow"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"CurrencyShadow"
-		"xpos"										"-1"
-		"ypos"										"-1"
+		"font"										"m0refont16"
+		"fgcolor"									"0 0 0 255"
+		"xpos"										"10"
+		"ypos"										"2"
 		"zpos"										"4"
-		"wide"										"f0"
-		"tall"										"f0"
+		"wide"										"90"
+		"tall"										"14"
 		"visible"									"1"
 		"enabled"									"1"
-		"proportionaltoparent"						"1"
+		"textAlignment"								"center"	
 		"labelText"									"%currency%"
-		"textAlignment"								"center"
-		"font"										"m0refont16"
-		"fgcolor"									"Black"
-
-		"pin_to_sibling"							"CurrencyGood"
 	}
-
-
-
-	//==================================================================================================================================================
-	// REMOVED ELEMENTS
-	//==================================================================================================================================================
-
+	
+	
+	
+	
+	
+	//////////////////////////////////REMOVED STUFF//////////////////////////////////
+	
+	"BorderBG"
+	{
+		"ControlName"								"EditablePanel"
+		"fieldName"									"BorderBG"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}	
 	"BackgroundGood"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"BackgroundGood"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
@@ -75,8 +79,6 @@
 	{
 		"ControlName"								"ImagePanel"
 		"fieldName"									"MoneyImagePanel"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"

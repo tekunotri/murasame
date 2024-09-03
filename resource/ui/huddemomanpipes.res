@@ -1,40 +1,46 @@
 "Resource/UI/HudDemomanPipes.res"
 {
-	"ChargeMeter"
-	{
-		"ControlName"								"ContinuousProgressBar"
-		"fieldName"									"ChargeMeter"
-		"xpos"										"cs-0.5"
-		"ypos"										"r80"
-		"zpos"										"2"
-		"wide"										"140"
-		"tall"										"2"
-		"visible"									"1"
-		"enabled"									"1"
-		"proportionaltoparent"						"1"
-	}
 	"ChargeLabel"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"ChargeLabel"
-		"xpos"										"0"
-		"ypos"										"0"
+		"xpos"										"c-69"
+		"ypos"										"402"
 		"zpos"										"2"
 		"wide"										"140"
 		"tall"										"8"
+		"autoResize"								"1"
+		"pinCorner"									"2"
 		"visible"									"1"
 		"enabled"									"1"
-		"proportionaltoparent"						"1"
+		"tabPosition"								"0"
 		"labelText"									"#TF_Charge"
 		"textAlignment"								"center"
-		"font"										"ScoreboardVerySmall"
-		"fgcolor"									"White"
-
-		"pin_to_sibling"							"ChargeMeter"
-		"pin_corner_to_sibling"						"PIN_CENTER_TOP"
-		"pin_to_sibling_corner"						"PIN_CENTER_BOTTOM"
+		"dulltext"									"0"
+		"brighttext"								"0"
+		"font"										"TFFontSmall"
+		"fgcolor_override"							"150 150 150 255"
 	}
 
+	"ChargeMeter"
+	{	
+		"ControlName"								"ContinuousProgressBar"
+		"fieldName"									"ChargeMeter"
+		"xpos"										"c-69"
+		"ypos"										"400"
+		"zpos"										"2"
+		"wide"										"140"
+		"tall"										"2"				
+		"autoResize"								"0"
+		"pinCorner"									"0"
+		"visible"									"1"
+		"enabled"									"1"
+		"textAlignment"								"Left"
+		"dulltext"									"0"
+		"brighttext"								"0"
+		"bgcolor_override"							"0 0 0 100"
+	}				
+		
 	"PipesPresentPanel"
 	{
 		"ControlName"								"EditablePanel"
@@ -43,81 +49,84 @@
 		"ypos"										"0"
 		"zpos"										"1"
 		"wide"										"f0"
-		"tall"										"f0"
+		"tall"										"480"
 		"visible"									"1"
-
+		
 		"NumPipesLabel"
 		{
 			"ControlName"							"CExLabel"
 			"fieldName"								"NumPipesLabel"
-			"xpos"									"cs-0.5"
+			"xpos"									"c-15"
 			"ypos"									"c54"
 			"zpos"									"2"
 			"wide"									"30"
 			"tall"									"20"
+			"autoResize"							"1"
+			"pinCorner"								"2"
 			"visible"								"1"
 			"enabled"								"1"
-			"proportionaltoparent"					"1"
+			"tabPosition"							"0"
 			"labelText"								"%activepipes%"
 			"textAlignment"							"center"
-			"font"									"m0refont24"
-			"fgcolor"								"White"
+			"dulltext"								"0"
+			"brighttext"							"0"
+			"font"									"medium24"
+			"fgcolor"   							"255 255 200 255"
 		}
+		
 		"NumPipesLabelDropshadow"
 		{
 			"ControlName"							"CExLabel"
 			"fieldName"								"NumPipesLabelDropshadow"
-			"xpos"									"-1"
-			"ypos"									"-1"
+			"xpos"									"c-14"
+			"ypos"									"c55"
 			"zpos"									"2"
 			"wide"									"30"
 			"tall"									"20"
+			"autoResize"							"1"
+			"pinCorner"								"2"
 			"visible"								"1"
 			"enabled"								"1"
-			"proportionaltoparent"					"1"
+			"tabPosition"							"0"
 			"labelText"								"%activepipes%"
 			"textAlignment"							"center"
-			"font"									"m0refont24"
-			"fgcolor"								"Black"
-
-			"pin_to_sibling"						"NumPipesLabel"
+			"dulltext"								"0"
+			"brighttext"							"0"
+			"font"									"medium24"
+			"fgcolor"								"50 50 50 255"
 		}
+
 		"PipeIcon"
 		{
 			"ControlName"							"CTFImagePanel"
 			"fieldName"								"PipeIcon"
-			"xpos"									"9999"
-			"ypos"									"9999"
 			"wide"									"0"
 			"tall"									"0"
 			"visible"								"0"
 			"enabled"								"0"
 		}
 	}
-
-
-
-	//==================================================================================================================================================
-	// REMOVED ELEMENTS
-	//==================================================================================================================================================
-
+	
+	
+	
+	
+	
+	//////////////////////////////////REMOVED STUFF//////////////////////////////////
+	
 	"background"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"background"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
-		"enabled"									"0"
+		"enabled"									"0"			
 	}
+	
 	"NoPipesPresentPanel"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"NoPipesPresentPanel"
-		"xpos"										"9999"
-		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"

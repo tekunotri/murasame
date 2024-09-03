@@ -6,7 +6,7 @@
 		"fieldName"									"ModelContainer"
 		"xpos"										"cs-0.5"
 		"ypos"										"cs-0.5"
-		"zpos"										"3"
+		"zpos"										"3"		
 		"wide"										"f0"
 		"tall"										"f0"
 		"proportionaltoparent"						"1"
@@ -24,40 +24,44 @@
 			"visible"								"1"
 			"proportionaltoparent"					"1"
 
-			"if_mini"
+			if_mini
 			{
 				"xpos"								"cs-0.5-228"
 			}
+
 			"ParticleEffects"
 			{
 				"0"
 				{
-					"particle_xpos"					"c0"
-					"particle_ypos"					"c0"
-					"particle_scale"				"3"
+					"particle_xpos" 				"c0"
+					"particle_ypos" 				"c0"
+					"particle_scale" 				"3"
 					"particleName"					"rankup_base"
-					"start_activated"				"0"
+					"start_activated" 				"0"
 					"loop"							"0"
 				}
 			}
 
-			"paintbackground"						"0"
+			"paintbackground"						"0"	
 		}
+
 		"RankModel"
 		{
 			"ControlName"							"CBaseModelPanel"
 			"fieldName"								"RankModel"
 			"xpos"									"cs-0.5"
 			"ypos"									"cs-0.5"
-			"zpos"									"0"
+			"zpos"									"0"		
 			"wide"									"o1"
 			"tall"									"p0.12"
+			"autoResize"							"0"
+			"pinCorner"								"0"
 			"visible"								"1"
 			"enabled"								"1"
 			"fov"									"70"
 			"proportionaltoparent"					"1"
 
-			"if_mini"
+			if_mini
 			{
 				"xpos"								"cs-0.5-228"
 				"ypos"								"cs-0.5"
@@ -68,7 +72,7 @@
 			"paintbackground"						"0"
 
 			"render_texture"						"0"
-
+		
 			"model"
 			{
 				"force_pos"							"1"
@@ -82,16 +86,18 @@
 				"origin_z"							"0"
 				"spotlight"							"1"
 
-				"if_mini"
+				if_mini
 				{
 					"origin_x"						"55"
 				}
+
 				"animation"
 				{
 					"sequence"						"idle"
 					"default"						"1"
 				}
 			}
+		
 			"lights"
 			{
 				"default"
@@ -102,6 +108,7 @@
 				}
 			}
 		}
+
 		"AboveModelParticlePanel"
 		{
 			"ControlName"							"CTFParticlePanel"
@@ -116,35 +123,36 @@
 
 			"paintbackground"						"0"
 
-			"if_mini"
+			if_mini
 			{
 				"xpos"								"cs-0.5-228"
 			}
+
 			"ParticleEffects"
 			{
 				"0"
 				{
-					"particle_xpos"					"c0"
-					"particle_ypos"					"c0"
+					"particle_xpos" 				"c0"
+					"particle_ypos" 				"c0"
 					"particle_scale"				"5"
 					"particleName"					"rankup_glitter"
-					"start_activated"				"0"
+					"start_activated" 				"0"
 					"loop"							"0"
 				}
 				"1"
 				{
 					"particle_xpos"					"c0"
 					"particle_ypos"					"c0"
-					"particle_scale"				"4"
+					"particle_scale" 				"4"
 					"particleName"					"badgepress_base"
-					"start_activated"				"0"
+					"start_activated" 				"0"
 					"loop"							"0"
 				}
 				"2"
 				{
-					"particle_xpos"					"c-8"
-					"particle_ypos"					"c0"
-					"particle_scale"				"4"
+					"particle_xpos" 				"c-8"
+					"particle_ypos" 				"c0"
+					"particle_scale" 				"4"
 					"particleName"					"rankdown_base"
 					"start_activated"				"0"
 					"loop"							"0"
@@ -153,6 +161,7 @@
 
 			"paintbackground"						"1"
 		}
+
 		"MedalButton"
 		{
 			"ControlName"							"Button"
@@ -171,211 +180,158 @@
 			"backgroundenabled"						"0"
 		}
 	}
+
 	"BGPanel"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"BGPanel"
-		"xpos"										"0"
-		"ypos"										"0"
+		"xpos"										"rs1"
+		"ypos"										"20"
 		"zpos"										"-1"
-		"wide"										"200"
-		"tall"										"50"
+		"wide"										"260"
+		"tall"										"f40"
 		"visible"									"1"
 		"PaintBackgroundType"						"2"
 		"proportionaltoparent"						"1"
 
-		"if_mini"
+		if_mini
 		{
 			"xpos"									"cs-0.5"
 			"ypos"									"cs-0.5"
 			"tall"									"35"
 			"wide"									"505"
 		}
+
 		"NameLabel"
 		{
-			"ControlName"							"CExLabel"
+			"ControlName"							"Label"
 			"fieldName"								"NameLabel"
-			"xpos"									"0"		//0
-			"ypos"									"0"
-			"wide"									"f0"
+			"xpos"									"65"
+			"ypos"									"8"
+			"wide"									"130"
 			"zpos"									"100"
-			"tall"									"14"
+			"tall"									"20"
 			"visible"								"1"
 			"enabled"								"1"
-			"font"									"Coolvetica15Shadow"
-			"fgcolor"								"White"
-			"textAlignment"							"west"
+			"font"									"Coolvetica"
+			"fgcolor_override"						"TanLight"
+			"textAlignment"							"north-west"
 			"labelText"								"%name%"
 			"proportionaltoparent"					"1"
 			"AllCaps"								"1"
 
-			"if_mini"
+			if_mini
 			{
 				"visible"							"0"
 			}
 		}
-		"Desc1MainMenu"
-		{
-			"ControlName"							"CAutoFittingLabel"
-			"fieldName"								"Desc1MainMenu"
-			"xpos"									"9999"
-			"ypos"									"0"
-			"wide"									"f0"
-			"zpos"									"100"
-			"tall"									"14"
-			"visible"								"1"
-			"enabled"								"1"
-			"font"									"Coolvetica15Shadow"
-			"fgcolor_override"						"White"
-			"textAlignment"							"west"
-			"labelText"								"%desc1%"
-			"proportionaltoparent"					"1"
-			"AllCaps"								"1"
 
-			"if_mini"
-			{
-				"wide"								"0"
-			}
-			"fonts"
-			{
-				"0"									"Coolvetica15Shadow"
-				"1"									"Coolvetica13"
-				"2"									"Coolvetica11"
-			}
-		}
-		"Desc2MainMenu"
-		{
-			"ControlName"							"CAutoFittingLabel"
-			"fieldName"								"Desc2MainMenu"
-			"xpos"									"0"
-			"ypos"									"17"
-			"wide"									"f0"
-			"zpos"									"100"
-			"tall"									"14"
-			"visible"								"1"
-			"enabled"								"1"
-			"font"									"Coolvetica15Shadow"
-			"fgcolor_override"						"White"
-			"textAlignment"							"north-west"
-			"labelText"								"%desc2%"
-			"proportionaltoparent"					"1"
-			"AllCaps"								"1"
-
-			"if_mini"
-			{
-				"wide"								"0"
-			}
-			"fonts"
-			{
-				"0"									"Coolvetica15Shadow"
-				"1"									"Coolvetica13"
-				"2"									"Coolvetica11"
-			}
-			"colors"
-			{
-				"1"									"CreditsGreen"
-				"2"									"White"
-			}
-		}
 		"DescLine1"
 		{
 			"ControlName"							"CAutoFittingLabel"
 			"fieldName"								"DescLine1"
-			"xpos"									"67"
-			"ypos"									"4"
-			"wide"									"0"
+			"xpos"									"65"
+			"ypos"									"24"
+			"wide"									"131"
 			"zpos"									"100"
 			"tall"									"20"
 			"visible"								"1"
 			"enabled"								"1"
-			"font"									"HudFontSmallestBold"
-			"fgcolor_override"						"White"
+			"font"									"Coolvetica"
+			"fgcolor_override"						"TanLight"
 			"textAlignment"							"north-west"
 			"labelText"								"%desc1%"
 			"proportionaltoparent"					"1"
+			"AllCaps"								"1"
 
-			"if_mini"
+			if_mini
 			{
-				"wide"								"131"
+				"xpos"								"67"
+				"ypos"								"4"
+				"wide"								"195"
+				"font"								"HudFontSmallestBold"
+				"AllCaps"							"0"
 			}
+
 			"fonts"
 			{
-				"0"									"HudFontSmallestBold"
-				"1"									"StorePromotionsTitle"
-				"2"									"FontStorePrice"
+				"0"									"Coolvetica"
+				"1"									"Coolvetica"
+				"2"									"Coolvetica"
 			}
 		}
+
 		"DescLine2"
 		{
 			"ControlName"							"CAutoFittingLabel"
 			"fieldName"								"DescLine2"
-			"xpos"									"67"
-			"ypos"									"4"
-			"wide"									"0"
+			"xpos"									"65"
+			"ypos"									"24"
+			"wide"									"131"
 			"zpos"									"100"
 			"tall"									"20"
 			"visible"								"1"
 			"enabled"								"1"
-			"font"									"HudFontSmallestBold"
-			"fgcolor_override"						"White"
+			"font"									"Coolvetica"
+			"fgcolor_override"						"TanLight"
 			"textAlignment"							"north-west"
 			"labelText"								"%desc2%"
 			"proportionaltoparent"					"1"
 			"AllCaps"								"1"
 
-			"if_mini"
+			if_mini
 			{
-				"wide"								"131"
+				"xpos"								"67"
+				"ypos"								"4"
+				"wide"								"195"
+				"font"								"HudFontSmallestBold"
+				"AllCaps"							"0"
 			}
+
 			"fonts"
 			{
-				"0"									"HudFontSmallestBold"
-				"1"									"StorePromotionsTitle"
-				"2"									"FontStorePrice"
+				"0"									"Coolvetica"
+				"1"									"Coolvetica"
+				"2"									"Coolvetica"
 			}
+
 			"colors"
 			{
 				"1"									"CreditsGreen"
-				"2"									"White"
+				"2"									"TanLight"
 			}
 		}
+
 		"StatsContainer"
 		{
 			"ControlName"							"EditablePanel"
 			"fieldName"								"StatsContainer"
-			"xpos"									"-1"
-			"ypos"									"29"
-			"wide"									"f0"
-			"tall"									"480"
+			"xpos"									"64"
+			"ypos"									"0"
+			"wide"									"120"
+			"tall"									"f0"
 			"proportionaltoparent"					"1"
 
-			"if_mini"
+			if_mini
 			{
 				"xpos"								"rs1-10"
 				"ypos"								"0"
 				"wide"								"p0.85"
-				"tall"								"f0"
 			}
+
 			"XPBar"
 			{
 				"Controlname"						"EditablePanel"
 				"fieldName"							"XPBar"
-				"xpos"								"0"
-				"ypos"								"0"
-				"wide"								"120"
-				"tall"								"20"
+				"xpos"								"cs-0.5"
+				"ypos"								"rs1-3"
+				"wide"								"p1"
+				"tall"								"30"
 				"proportionaltoparent"				"1"
 
-				"if_mini"
-				{
-					"xpos"							"cs-0.5"
-					"ypos"							"rs1-3"
-					"wide"							"p1"
-					"tall"							"30"
-				}
 				"CurrentXPLabel"
 				{
-					"ControlName"					"CExLabel"
+					"ControlName"					"Label"
 					"fieldName"						"CurrentXPLabel"
 					"xpos"							"0"
 					"ypos"							"rs1"
@@ -385,19 +341,20 @@
 					"visible"						"1"
 					"enabled"						"1"
 					"font"							"ItemFontAttribSmall"
-					"fgcolor"						"White"
+					"fgcolor_override"				"TanLight"
 					"textAlignment"					"south-west"
 					"labelText"						"%current_xp%"
 					"proportionaltoparent"			"1"
-
-					"if_mini"
+					
+					if_mini
 					{
 						"wide"						"100"
 					}
 				}
+
 				"NextLevelXPLabel"
 				{
-					"ControlName"					"CExLabel"
+					"ControlName"					"Label"
 					"fieldName"						"NextLevelXPLabel"
 					"xpos"							"rs1"
 					"ypos"							"rs1"
@@ -407,16 +364,17 @@
 					"visible"						"1"
 					"enabled"						"1"
 					"font"							"ItemFontAttribSmall"
-					"fgcolor"						"White"
+					"fgcolor_override"				"TanLight"
 					"textAlignment"					"south-east"
 					"labelText"						"%next_level_xp%"
 					"proportionaltoparent"			"1"
-
-					"if_mini"
+					
+					if_mini
 					{
 						"wide"						"100"
 					}
 				}
+
 				"ProgressBarsContainer"
 				{
 					"Controlname"					"EditablePanel"
@@ -440,13 +398,14 @@
 						"progress"					"1"
 
 						"fgcolor_override"			"20 20 20 180"
-						"bgcolor_override"			"Blank"
-
-						"if_mini"
+						"bgcolor_override"			"0 0 0 0"
+						
+						if_mini
 						{
 							"wide"					"f0"
 						}
 					}
+
 					"ContinuousProgressBar"
 					{
 						"ControlName"				"ContinuousProgressBar"
@@ -458,13 +417,14 @@
 						"proportionaltoparent"		"1"
 						"progress"					"0"
 
-						"fgcolor_override"			"Menu Labels"
-
-						"if_mini"
+						"fgcolor_override"			"Main Menu Labels"
+						
+						if_mini
 						{
 							"fgcolor_override"		"CreditsGreen"
 						}
 					}
+
 					"Frame"
 					{
 						"Controlname"				"EditablePanel"
@@ -476,14 +436,15 @@
 						"zpos"						"5"
 						"proportionaltoparent"		"1"
 						"border"					"InnerShadowBorderThin"
-
-						"if_mini"
+						
+						if_mini
 						{
-							"wide"					"f0"
+							"wide"						"f0"
 						}
 					}
 				}
 			}
+
 			"Stats"
 			{
 				"ControlName"							"EditablePanel"
@@ -500,6 +461,7 @@
 				{
 					"visible"							"0"
 				}
+
 				"Frame"
 				{
 					"ControlName"						"EditablePanel"
@@ -512,10 +474,11 @@
 					"proportionaltoparent"				"1"
 					"border"							"InnerShadowBorder"
 				}
+
 				// First column
 				"GamesLabel"
 				{
-					"ControlName"						"CExLabel"
+					"ControlName"						"Label"
 					"fieldName"							"GamesLabel"
 					"xpos"								"10"
 					"ypos"								"0"
@@ -525,14 +488,15 @@
 					"visible"							"1"
 					"enabled"							"1"
 					"font"								"HudFontSmallest"
-					"fgcolor"							"White"
+					"fgcolor_override"					"TanLight"
 					"textAlignment"						"north-west"
 					"labelText"							"%stat_games%"
 					"proportionaltoparent"				"1"
 				}
+
 				"KillsLabel"
 				{
-					"ControlName"						"CExLabel"
+					"ControlName"						"Label"
 					"fieldName"							"KillsLabel"
 					"xpos"								"10"
 					"ypos"								"10"
@@ -542,14 +506,15 @@
 					"visible"							"1"
 					"enabled"							"1"
 					"font"								"HudFontSmallest"
-					"fgcolor"							"White"
+					"fgcolor_override"					"TanLight"
 					"textAlignment"						"north-west"
 					"labelText"							"%stat_kills%"
 					"proportionaltoparent"				"1"
 				}
+
 				"DeathsLabel"
 				{
-					"ControlName"						"CExLabel"
+					"ControlName"						"Label"
 					"fieldName"							"DeathsLabel"
 					"xpos"								"10"
 					"ypos"								"20"
@@ -559,15 +524,16 @@
 					"visible"							"1"
 					"enabled"							"1"
 					"font"								"HudFontSmallest"
-					"fgcolor"							"White"
+					"fgcolor_override"					"TanLight"
 					"textAlignment"						"north-west"
 					"labelText"							"%stat_deaths%"
 					"proportionaltoparent"				"1"
 				}
+
 				// Second column
 				"DamageLabel"
 				{
-					"ControlName"						"CexLabel"
+					"ControlName"						"Label"
 					"fieldName"							"DamageLabel"
 					"xpos"								"c-20"
 					"ypos"								"0"
@@ -577,14 +543,15 @@
 					"visible"							"1"
 					"enabled"							"1"
 					"font"								"HudFontSmallest"
-					"fgcolor"							"White"
+					"fgcolor_override"					"TanLight"
 					"textAlignment"						"north-west"
 					"labelText"							"%stat_damage%"
 					"proportionaltoparent"				"1"
 				}
+
 				"HealingLabel"
 				{
-					"ControlName"						"CExLabel"
+					"ControlName"						"Label"
 					"fieldName"							"HealingLabel"
 					"xpos"								"c-20"
 					"ypos"								"10"
@@ -594,14 +561,15 @@
 					"visible"							"1"
 					"enabled"							"1"
 					"font"								"HudFontSmallest"
-					"fgcolor"							"White"
+					"fgcolor_override"					"TanLight"
 					"textAlignment"						"north-west"
 					"labelText"							"%stat_healing%"
 					"proportionaltoparent"				"1"
 				}
+
 				"SupportLabel"
 				{
-					"ControlName"						"CExLabel"
+					"ControlName"						"Label"
 					"fieldName"							"SupportLabel"
 					"xpos"								"c-20"
 					"ypos"								"20"
@@ -611,15 +579,16 @@
 					"visible"							"1"
 					"enabled"							"1"
 					"font"								"HudFontSmallest"
-					"fgcolor"							"White"
+					"fgcolor_override"					"TanLight"
 					"textAlignment"						"north-west"
 					"labelText"							"%stat_support%"
 					"proportionaltoparent"				"1"
 				}
+
 				// Third column
 				"ScoreLabel"
 				{
-					"ControlName"						"CExLabel"
+					"ControlName"						"Label"
 					"fieldName"							"ScoreLabel"
 					"xpos"								"rs1"
 					"ypos"								"0"
@@ -629,7 +598,7 @@
 					"visible"							"1"
 					"enabled"							"1"
 					"font"								"HudFontSmallest"
-					"fgcolor"							"White"
+					"fgcolor_override"					"TanLight"
 					"textAlignment"						"north-west"
 					"labelText"							"%stat_score%"
 					"proportionaltoparent"				"1"
